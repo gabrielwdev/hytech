@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background-color: #E2E1DD;
+}
+.container .header {
+  height: 6rem;
+  background-color: #ffffff;
+  border-bottom: 5px solid #ffd900;
+}
+.container .header-navbar {
+  max-width: 1200px;
+  padding: 2.5rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.container .header-navbar-icon-navicon {
+  display: none;
+  max-width: 1200px;
+  padding: 2.5rem;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .container .header-navbar-icon-navicon {
+    display: block;
+  }
+}
+.container .header-navbar-icon-navicon .hamburger1 {
+  height: 45px;
+  margin: 10px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  z-index: 120;
+}
+.container .header-navbar-icon-navicon .hamburger1 div {
+  background-color: #353535;
+  position: relative;
+  width: 40px;
+  height: 5px;
+  margin-top: 7px;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.container .header-navbar-icon-navicon #toggle1 {
+  display: none;
+}
+.container .header-navbar-icon-navicon #toggle1:checked + .hamburger1 .top {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin: 20px 0 0;
+}
+.container .header-navbar-icon-navicon #toggle1:checked + .hamburger1 .meat {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin: -4px 0 0 0;
+}
+.container .header-navbar-icon-navicon #toggle1:checked + .hamburger1 .bottom {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.container .header-navbar-icon-navicon #toggle1:checked ~ .menu-drop {
+  position: absolute;
+  height: 100%;
+  width: 300px;
+  margin-top: 39px;
+  right: 20px;
+  box-shadow: 1px 0px 20px #afafaf;
+}
+.container .header-navbar-icon-navicon .menu-drop {
+  background-color: #ffffff;
+  margin: 0;
+  display: grid;
+  padding: 0;
+  width: 0;
+  text-align: center;
+  height: 0;
+  overflow: hidden;
+}
+.container .header-navbar-icon-navicon .menu-drop .lista {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+.container .header-navbar-icon-navicon .menu-drop .lista li {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #afafaf;
+}
+.container .header-navbar-icon-navicon .menu-drop .lista li .link1 {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  width: 90px;
+  color: #353535;
+}
+.container .header-navbar-logo {
+  width: 9rem;
+}
+.container .header-navbar-lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem 2.5rem;
+}
+@media (max-width: 900px) {
+  .container .header-navbar-lista {
+    display: none;
+  }
+}
+.container .header-navbar-lista-item {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  list-style: none;
+  transition-property: border-bottom;
+  transition-duration: 0.3s;
+}
+.container .header-navbar-lista-item-link {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: #353535;
+  transition-property: border-bottom;
+  transition-duration: 0.4s;
+  position: relative;
+}
+.container .header-navbar-lista-item-link::after {
+  content: " ";
+  width: 0;
+  height: 5px;
+  background-color: #ffd900;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+.container .header-navbar-lista-item-link:hover::after {
+  width: 100%;
+}
+
+.footer {
+  background-color: #ffffff;
+  border-top: 5px solid #ffd900;
+}
+.footer-navbar {
+  max-width: 1200px;
+  padding: 2.5rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .footer-navbar {
+    row-gap: 30px;
+    flex-direction: column;
+  }
+}
+.footer-navbar-logo {
+  width: 10rem;
+}
+.footer-navbar-link {
+  text-decoration: none;
+  color: #353535;
+}
+.footer-navbar-link .bi {
+  width: 3rem;
+  height: 3rem;
+}
+.footer-navbar-complementos {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #3d3d3d;
+}
+.footer-navbar-complementos-link {
+  text-decoration: none;
+  color: #3d3d3d;
+}
+.footer-navbar-complementos-link:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

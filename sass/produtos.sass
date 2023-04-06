@@ -1,0 +1,163 @@
+@use 'variables'
+@use 'mixins'
+
+.section
+        @include mixins.centralizar
+        flex-direction: column
+        row-gap: 5px
+        margin: 2rem 2rem 0 2rem
+        padding: 2rem
+        background-color: #fff
+        border-top: 5px solid variables.$ilustrator-color
+
+        &-titulo, &-descricao
+            @include mixins.centralizar
+            text-align: center
+
+        &-titulo
+            font-family: 'Roboto', sans-serif
+            font-size: 35px
+            text-transform: uppercase
+
+            @include mixins.notebook
+                font-size: 30px
+
+            @include mixins.tablet
+                font-size: 25px
+
+        &-descricao
+            font-family: 'Noto Serif Lao', serif
+            font-size: 23px
+            color: #5a5a5a
+            text-align: center
+
+            @include mixins.notebook
+                font-size: 20px
+
+            @include mixins.tablet
+                font-size: 15px
+
+.main
+    padding: 1.5rem
+    display: flex
+    align-items: flex-start
+    @include mixins.smartphone
+        align-items: center
+        flex-direction: column
+
+    &-itens
+        width: 900px
+            
+        @include mixins.smartphone
+            width: 100%
+            
+        &-lista
+            display: flex
+            justify-content: center
+            flex-direction: column
+            padding: 10px         
+            row-gap: 50px     
+            
+
+            &-categoria
+                border-top: 5px solid variables.$ilustrator-color
+                @include mixins.centralizar
+                padding: 2rem
+                font-weight: 700
+                font-size: 21px
+                color: variables.$secondary-color
+                background-color: variables.$bg-color
+                display: flex
+                flex-direction: column
+                row-gap: 50px
+
+                &-titulo
+                    text-align: center
+
+                &-elementos
+                    display: flex
+                    flex-wrap: wrap
+                    column-gap: 20px
+                    justify-content: center
+
+            &-cards
+                list-style: none
+                width: 15rem
+                height: 24rem
+                padding: 10px
+                display: grid
+                gap: 50px
+                align-items: center
+                transition-property: border
+                transition-duration: 0.1s
+                background-color: variables.$bg-color
+
+                &:hover
+                    box-shadow: 1px 0px 20px #afafaf
+                    border-radius: 25px
+
+
+                &-img
+                        height: 10rem
+                        width: 13rem
+                        border-radius: 20px
+
+                &-titulo
+                    font-size: 18px
+                    text-transform: uppercase
+
+
+                &-descricao
+                    font-size: 18px
+                    color: #5a5a5a
+                    padding-left: 2rem
+
+    &-aside
+            margin: 0.5rem
+            background-color: variables.$bg-color
+            width: 350px
+            padding: 1rem
+            border-top: 5px solid variables.$ilustrator-color
+
+            @include mixins.smartphone
+                width: 100%
+                
+
+            &-titulo
+                color: variables.$secondary-color
+                font-size: 20px
+                text-align: center
+                margin: 20px auto
+                text-transform: uppercase
+                font-family: 'Roboto', sans-serif
+
+            &-lista
+                @include mixins.centralizar
+                flex-direction: column
+
+                &-itens
+                    @include mixins.centralizar
+                    flex-direction: column
+                    padding: 15px
+                    gap: 10px
+                    transition-property: border
+                    transition-duration: 0.1s
+
+                    &:hover
+                        // border: 1px solid variables.$secondary-color
+                        box-shadow: 1px 0px 20px #afafaf
+                        border-radius: 20px
+                        cursor: pointer
+
+                    &-img
+                        width: 15rem
+                        border-radius: 20px
+
+                    &-titulo
+                        font-family: 'Roboto', sans-serif
+                        color: variables.$secondary-color
+                        margin: 15px 0 
+                        text-transform: uppercase
+                        font-size: 18px
+                            
+        

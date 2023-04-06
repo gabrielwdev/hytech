@@ -1,0 +1,192 @@
+@use 'variables'
+@use 'mixins'
+    
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Roboto', sans-serif
+
+.container
+    background-color: #E2E1DD
+
+    .header
+        height: 6rem
+        background-color: variables.$bg-color
+        border-bottom: 5px solid variables.$ilustrator-color
+
+        &-navbar
+            @include mixins.container
+            @include mixins.centralizar
+            justify-content: space-between
+            height: 100%     
+
+            &-icon
+                
+
+                &-navicon
+                    display: none
+                    @include mixins.container
+
+                    @include mixins.tablet
+                        display: block
+
+                    .hamburger1
+                        height: 45px
+                        margin: 10px
+                        display: grid
+                        grid-template-rows: repeat(3, 1fr)
+                        justify-content: center
+                        z-index: 120
+                        
+
+                        div
+                            background-color: variables.$secondary-color
+                            position: relative
+                            width: 40px
+                            height: 5px
+                            margin-top: 7px
+                            -webkit-transition: all 0.3s ease-in-out
+
+                    #toggle1 
+                        display: none
+
+                    #toggle1:checked + .hamburger1 .top
+                        -webkit-transform: rotate(-45deg)
+                        transform: rotate(-45deg)
+                        margin: 20px 0 0
+
+                    #toggle1:checked + .hamburger1 .meat
+                        -webkit-transform: rotate(45deg)
+                        transform: rotate(45deg)
+                        margin: -4px 0 0 0
+
+                    #toggle1:checked + .hamburger1 .bottom
+                        -webkit-transform: scale(0)
+                        transform: scale(0)
+
+                    #toggle1:checked ~ .menu-drop
+                        position: absolute
+                        height: 100%
+                        width: 300px
+                        margin-top: 39px
+                        right: 20px
+                        box-shadow: 1px 0px 20px #afafaf
+
+                    .menu-drop
+                        background-color: variables.$bg-color
+                        margin: 0 
+                        display: grid
+                        padding: 0
+                        width: 0
+                        text-align: center
+                        height: 0
+                        overflow: hidden
+
+                        .lista
+                            display: flex
+                            flex-direction: column
+                            padding: 0 10px
+
+                            li
+                                
+                                padding: 10px
+                                display: flex
+                                flex-direction: column
+                                align-items: center
+                                justify-content: center
+                                border-bottom: 1px solid #afafaf
+                                
+                                
+                                .link1
+                                    text-align: center
+                                    text-decoration: none
+                                    width: 100%
+                                    margin: 0
+                                    font-family: 'Roboto', sans-serif
+                                    width: 90px
+                                    color: variables.$secondary-color
+
+            &-logo
+                width: 9rem
+
+            &-lista
+                @include mixins.centralizar
+                flex-wrap: wrap
+                gap: 1rem 2.5rem
+
+                @include mixins.tablet
+                    display: none
+
+                &-item
+                    font-family: 'Roboto', sans-serif
+                    font-size: 16px
+                    font-weight: bold
+                    list-style: none
+                    transition-property: border-bottom
+                    transition-duration: 0.3s
+
+
+                    &-link
+                        font-family: 'Roboto', sans-serif
+                        text-decoration: none
+                        color: variables.$secondary-color
+                        transition-property: border-bottom
+                        transition-duration: 0.4s
+                        position: relative
+                        
+                    &-link::after
+                        content: " "
+                        width: 0
+                        height: 5px
+                        background-color: variables.$ilustrator-color
+                        position: absolute
+                        bottom: -5px
+                        left: 0
+                        transition: 0.5s ease-in-out
+
+                    &-link:hover::after
+                        width: 100% 
+
+                                    
+
+.footer
+        background-color: variables.$bg-color
+        border-top: 5px solid variables.$ilustrator-color
+
+        &-navbar
+            @include mixins.container
+            @include mixins.centralizar
+            justify-content: space-between
+            
+            @include mixins.tablet
+                row-gap: 30px
+                flex-direction: column
+
+            &-logo
+                width: 10rem
+
+            &-link
+                text-decoration: none
+                color: variables.$secondary-color
+                
+                .bi
+                    width: 3rem
+                    height: 3rem
+            
+            &-complementos
+                text-align: center
+                font-family: Arial, Helvetica, sans-serif
+                font-size: 13px
+                color: #3d3d3d
+
+                &-link
+                    text-decoration: none
+                    color: #3d3d3d
+
+                    &:hover
+                        text-decoration: underline
+                        
+                    
+            
+                

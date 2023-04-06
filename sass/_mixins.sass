@@ -1,0 +1,23 @@
+@use 'variables'
+
+@mixin container
+    max-width: variables.$container-width
+    padding: 2.5rem
+    margin: 0 auto
+    
+@mixin centralizar
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin notebook 
+    @media (max-width:1000px)
+        @content
+
+@mixin tablet
+    @media (max-width:900px)
+        @content
+
+@mixin smartphone
+    @media (max-width:600px)
+        @content
