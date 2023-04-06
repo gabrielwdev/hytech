@@ -13,6 +13,7 @@
   justify-content: center;
   color: white;
   padding: 50px;
+  background-image: url(../img/bg-2.png);
   background-color: #353535;
 }
 .main-img {
@@ -183,6 +184,39 @@
 .sobre-competencia li {
   line-height: 18px;
   font-size: 16px;
+}
+
+.informacoes {
+  background-image: url(../img/bg-2.png);
+  background-color: #ffffff;
+  padding: 100px;
+  display: flex;
+  column-gap: 20px;
+  border-top: 5px solid rgba(53, 53, 53, 0.2078431373);
+}
+.informacoes-loja {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+}
+.informacoes-loja h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+.informacoes-loja p {
+  font-size: 14px;
+}
+.informacoes-canais {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.informacoes-canais h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+.informacoes-canais p {
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=home.css.map */
