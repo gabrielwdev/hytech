@@ -214,6 +214,7 @@
 @media (max-width: 900px) {
   .informacoes {
     grid-template-columns: 1fr;
+    padding: 50px;
   }
 }
 .informacoes-loja {
@@ -276,12 +277,6 @@
 @media (max-width: 900px) {
   .informacoes-maps {
     margin: 20px auto;
-  }
-}
-@media (max-width: 600px) {
-  .informacoes-maps {
-    width: 300;
-    height: 225;
   }
 }
 
