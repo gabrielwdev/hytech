@@ -16,8 +16,20 @@
   background-image: url(../img/bg-2.png);
   background-color: #353535;
 }
+@media (max-width: 600px) {
+  .main {
+    height: 30vh;
+    padding: 0;
+  }
+}
 .main-img {
   width: 100%;
+}
+@media (max-width: 600px) {
+  .main-img {
+    height: 30vh;
+    width: 100vw;
+  }
 }
 .main-caixa-destaque {
   display: flex;
@@ -38,21 +50,21 @@
 }
 @media (max-width: 1000px) {
   .main-caixa-destaque-link {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 18px;
     padding: 18px 45px;
   }
 }
 @media (max-width: 900px) {
   .main-caixa-destaque-link {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 16px;
     padding: 16px 40px;
   }
 }
 @media (max-width: 600px) {
   .main-caixa-destaque-link {
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 14px;
     padding: 14px 35px;
     border: 2px solid #fff;
@@ -90,12 +102,12 @@
 }
 @media (max-width: 900px) {
   .main-caixa-destaque-title-descricao {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 @media (max-width: 600px) {
   .main-caixa-destaque-title-descricao {
-    font-size: 10px;
+    font-size: 20px;
   }
 }
 .main-caixa-destaque-title .animation {
@@ -105,6 +117,11 @@
   background-color: #E2E1DD;
   display: grid;
   margin: 50px;
+}
+@media (max-width: 900px) {
+  .sobre {
+    margin: 20px;
+  }
 }
 .sobre-loja, .sobre-missao, .sobre-negocio, .sobre-competencia {
   background-color: #fff;
@@ -183,15 +200,31 @@
   background-image: url(../img/bg-2.png);
   background-color: #ffffff;
   padding: 100px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
   column-gap: 10px;
   border-top: 5px solid rgba(53, 53, 53, 0.2078431373);
+}
+@media (max-width: 1000px) {
+  .informacoes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .informacoes {
+    grid-template-columns: 1fr;
+  }
 }
 .informacoes-loja {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+}
+@media (max-width: 900px) {
+  .informacoes-loja {
+    display: none;
+  }
 }
 .informacoes-loja h2 {
   font-family: "Roboto", sans-serif;
@@ -235,6 +268,21 @@
 }
 .informacoes-canais ul .bi:hover {
   color: #ffbf00;
+}
+.informacoes-maps {
+  width: 400;
+  height: 250;
+}
+@media (max-width: 900px) {
+  .informacoes-maps {
+    margin: 20px auto;
+  }
+}
+@media (max-width: 600px) {
+  .informacoes-maps {
+    width: 300;
+    height: 225;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

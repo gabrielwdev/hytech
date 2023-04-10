@@ -20,8 +20,18 @@
     background-image: url(../img/bg-2.png)
     background-color: #353535
 
+    @include mixins.smartphone
+        height: 30vh
+        padding: 0
+
     &-img 
         width: 100%
+
+        @include mixins.smartphone
+            height: 30vh
+            width: 100vw
+        
+        
  
     &-caixa-destaque
         display: flex
@@ -41,17 +51,17 @@
             font-weight: bold
 
             @include mixins.notebook
-                font-size: 14px
+                font-size: 16px
                 margin-top: 18px
                 padding: 18px 45px
         
             @include mixins.tablet
-                font-size: 12px
+                font-size: 14px
                 margin-top: 16px
                 padding: 16px 40px
 
             @include mixins.smartphone
-                font-size: 10px
+                font-size: 12px
                 margin-top: 14px
                 padding: 14px 35px
                 border: 2px solid #fff
@@ -83,10 +93,10 @@
                 overflow: hidden
 
                 @include mixins.tablet
-                    font-size: 20px
+                    font-size: 25px
 
                 @include mixins.smartphone
-                    font-size: 10px
+                    font-size: 20px
             
             .animation
                 animation: typing 4s 1s normal
@@ -111,6 +121,11 @@
     background-color:#E2E1DD 
     display: grid
     margin: 50px
+
+    @include mixins.tablet
+        margin: 20px
+
+    @include mixins.smartphone
 
     &-loja, &-missao, &-negocio, &-competencia
         background-color: #fff
@@ -184,15 +199,25 @@
     background-image: url(../img/bg-2.png)
     background-color: #ffffff
     padding: 100px
-    display: flex
-    flex-wrap: wrap
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    justify-content: center
     column-gap: 10px
     border-top: 5px solid #35353535
+
+    @include mixins.notebook
+        grid-template-columns: repeat(2, 1fr)
+
+    @include mixins.tablet
+        grid-template-columns: 1fr
 
     &-loja
         display: flex
         flex-direction: column
         row-gap: 20px
+
+        @include mixins.tablet
+            display: none
 
         h2
             font-family: "Roboto", sans-serif
@@ -237,3 +262,13 @@
                 &:hover
                     color: #ffbf00
     
+    &-maps
+        width: 400
+        height: 250
+
+        @include mixins.tablet
+            margin: 20px auto
+
+        @include mixins.smartphone
+            width: 300
+            height: 225
