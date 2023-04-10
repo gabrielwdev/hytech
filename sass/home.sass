@@ -198,7 +198,7 @@
 .informacoes
     background-image: url(../img/bg-2.png)
     background-color: #ffffff
-    padding: 100px
+    padding: 50px
     display: grid
     grid-template-columns: repeat(3, 1fr)
     justify-content: center
@@ -216,6 +216,7 @@
         display: flex
         flex-direction: column
         row-gap: 20px
+        max-width: 400px
 
         @include mixins.tablet
             display: none
@@ -264,11 +265,19 @@
                     color: #ffbf00
     
     &-maps
-        width: 400
-        height: 250
+        display: flex
+        justify-content: center
+        .mapa
+            width: 400px
+            height: 250px
+            @include mixins.notebook
+            justify-content: center
+            margin-top: 50px
 
-        @include mixins.tablet
-            margin: 20px auto
-
-        @include mixins.smartphone
-            
+            @include mixins.tablet
+                margin: 20px auto
+            @include mixins.smartphone
+                width: 300px
+                height: 190px
+                background-color: red
+                
