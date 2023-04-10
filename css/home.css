@@ -184,6 +184,7 @@
   background-color: #ffffff;
   padding: 100px;
   display: flex;
+  flex-wrap: wrap;
   column-gap: 10px;
   border-top: 5px solid rgba(53, 53, 53, 0.2078431373);
 }
