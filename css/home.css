@@ -25,23 +25,6 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 35%;
-  gap: 10px;
-}
-@media (max-width: 1000px) {
-  .main-caixa-destaque {
-    top: 30%;
-  }
-}
-@media (max-width: 900px) {
-  .main-caixa-destaque {
-    top: 25%;
-  }
-}
-@media (max-width: 600px) {
-  .main-caixa-destaque {
-    top: 20%;
-  }
 }
 .main-caixa-destaque-link {
   color: #fff;
@@ -104,6 +87,16 @@
   margin: 0 auto;
   width-space: nowrap;
   overflow: hidden;
+}
+@media (max-width: 900px) {
+  .main-caixa-destaque-title-descricao {
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .main-caixa-destaque-title-descricao {
+    font-size: 10px;
+  }
 }
 .main-caixa-destaque-title .animation {
   animation: typing 4s 1s normal;
@@ -191,12 +184,12 @@
   background-color: #ffffff;
   padding: 100px;
   display: flex;
-  column-gap: 20px;
+  column-gap: 10px;
   border-top: 5px solid rgba(53, 53, 53, 0.2078431373);
 }
 .informacoes-loja {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   row-gap: 20px;
 }
 .informacoes-loja h2 {
@@ -217,6 +210,30 @@
 }
 .informacoes-canais p {
   font-size: 14px;
+}
+.informacoes-canais a {
+  text-decoration: none;
+  color: #000000;
+}
+.informacoes-canais div {
+  display: flex;
+  column-gap: 10px;
+}
+.informacoes-canais address, .informacoes-canais div {
+  font-size: 14px;
+}
+.informacoes-canais ul {
+  display: flex;
+  list-style: none;
+  column-gap: 10px;
+}
+.informacoes-canais ul .bi {
+  width: 20px;
+  height: 20px;
+  color: #363636;
+}
+.informacoes-canais ul .bi:hover {
+  color: #ffbf00;
 }
 
 /*# sourceMappingURL=home.css.map */

@@ -29,17 +29,6 @@
         align-items: center
         justify-content: center
         position: absolute
-        top: 35%
-        gap: 10px
-
-        @include mixins.notebook
-            top: 30%
-        
-        @include mixins.tablet
-            top: 25%
-
-        @include mixins.smartphone
-            top: 20%
 
         &-link
             color: #fff
@@ -92,6 +81,12 @@
                 margin: 0 auto
                 width-space: nowrap
                 overflow: hidden
+
+                @include mixins.tablet
+                    font-size: 20px
+
+                @include mixins.smartphone
+                    font-size: 10px
             
             .animation
                 animation: typing 4s 1s normal
@@ -190,12 +185,12 @@
     background-color: #ffffff
     padding: 100px
     display: flex
-    column-gap: 20px
+    column-gap: 10px
     border-top: 5px solid #35353535
 
     &-loja
-        display: grid
-        grid-template-columns: 1fr 1fr
+        display: flex
+        flex-direction: column
         row-gap: 20px
 
         h2
@@ -216,5 +211,28 @@
 
         p
             font-size: 14px   
+        
+        a
+            text-decoration: none
+            color: #000000
 
+        div
+            display: flex 
+            column-gap: 10px
+
+        address, div
+            font-size: 14px
+
+        ul
+            display: flex
+            list-style: none
+            column-gap: 10px
+
+            .bi
+                width: 20px
+                height: 20px
+                color: #363636
+
+                &:hover
+                    color: #ffbf00
     
