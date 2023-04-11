@@ -127,6 +127,39 @@
 
                 @include mixins.smartphone
 
+.atalho-produtos
+    background-color: #383838
+    background-image: url(../img/bg-2.png)
+    width: 100vw
+    padding: 50px
+
+    &-lista
+        @include mixins.centralizar
+        justify-content: space-between
+        flex-wrap: wrap
+
+        &-items
+            @include mixins.centralizar
+            list-style: none
+
+            &-links
+                @include mixins.centralizar
+                flex-direction: column
+
+                &-img
+                    width: 250px
+                    height: 220px
+
+                &-btn
+                    border: 2px solid #fff
+                    border-radius: 5px
+                    padding: 10px 50px
+                    color: #fff
+                    font-size: 16px
+                    font-family: 'Roboto', sans-serif
+                    font-weight: 700
+
+
 .sobre
     background-color:#E2E1DD 
     display: grid
