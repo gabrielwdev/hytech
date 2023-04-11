@@ -249,7 +249,10 @@
 }
 .informacoes-canais a {
   text-decoration: none;
-  color: #000000;
+  color: #363636;
+}
+.informacoes-canais a:hover {
+  color: #ffbf00;
 }
 .informacoes-canais div {
   display: flex;
@@ -269,6 +272,12 @@
   color: #363636;
 }
 .informacoes-canais ul .bi:hover {
+  color: #ffbf00;
+}
+.informacoes-link {
+  color: #363636;
+}
+.informacoes-link:hover {
   color: #ffbf00;
 }
 .informacoes-maps {
