@@ -13,27 +13,27 @@
     justify-content: center
     color: white
     padding: 50px
-    background-image: url(../img/bg-2.png)
+    height: 55vh
+    background-image: url(../img/1.png)
+    background-size: 100vw
+    background-repeat: no-repeat
     background-color: #353535
 
+    @include mixins.notebook
+        height: 50vh
+
+    @include mixins.tablet
+        height: 35vh
+
     @include mixins.smartphone
-        height: 30vh
+        height: 25vh
         padding: 0
-
-    &-img 
-
-        width: 90vw
-
-        @include mixins.smartphone
-            height: 30vh
-            width: 100vw
     
     &-caixa-destaque
         display: flex
         flex-direction: column
         align-items: center
         justify-content: center
-        position: absolute
 
         &-link
             color: #fff
