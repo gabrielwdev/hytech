@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -104,6 +103,7 @@
   width: 100%;
   margin: 0;
   font-family: "Roboto", sans-serif;
+  font-weight: 700;
   width: 90px;
   color: #353535;
 }
