@@ -194,6 +194,8 @@
 .sobre-competencia li {
   line-height: 18px;
   font-size: 16px;
+  margin-top: 20px;
+  list-style: none;
 }
 
 .informacoes {
@@ -230,22 +232,27 @@
 }
 .informacoes-loja h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 15px;
 }
 .informacoes-loja p {
-  font-size: 14px;
+  font-size: 13px;
 }
 .informacoes-canais {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 20px;
+}
+@media (max-width: 900px) {
+  .informacoes-canais {
+    margin: 80px auto;
+  }
 }
 .informacoes-canais h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 15px;
 }
 .informacoes-canais p {
-  font-size: 14px;
+  font-size: 13px;
 }
 .informacoes-canais a {
   text-decoration: none;
@@ -279,6 +286,10 @@
 }
 .informacoes-link:hover {
   color: #ffbf00;
+}
+.informacoes .numero {
+  font-size: 30px;
+  font-weight: bold;
 }
 .informacoes-maps {
   display: flex;

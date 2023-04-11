@@ -194,6 +194,8 @@
         li
             line-height: 18px
             font-size: 16px
+            margin-top: 20px
+            list-style: none
 
 .informacoes
     background-image: url(../img/bg-2.png)
@@ -223,22 +225,25 @@
 
         h2
             font-family: "Roboto", sans-serif
-            font-size: 18px  
+            font-size: 15px  
 
         p
-            font-size: 14px   
+            font-size: 13px   
 
     &-canais
         display: flex
         flex-direction: column
-        row-gap: 10px
+        row-gap: 20px
+
+        @include mixins.tablet
+            margin: 80px auto
 
         h2
             font-family: "Roboto", sans-serif
-            font-size: 18px  
+            font-size: 15px  
 
         p
-            font-size: 14px   
+            font-size: 13px   
         
         a
             text-decoration: none
@@ -271,6 +276,10 @@
 
         &:hover
             color: #ffbf00
+    
+    .numero
+        font-size: 30px
+        font-weight: bold
     
     &-maps
         display: flex

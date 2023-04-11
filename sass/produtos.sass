@@ -1,6 +1,116 @@
 @use 'variables'
 @use 'mixins'
 
+.destaque
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    color: white
+    padding: 50px
+    background-image: url(../img/bg-2.png)
+    background-color: #353535
+
+    @include mixins.smartphone
+        height: 30vh
+        padding: 0
+
+    &-img 
+
+        width: 90vw
+
+        @include mixins.smartphone
+            height: 30vh
+            width: 100vw
+    
+    &-caixa-destaque
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        position: absolute
+
+        &-link
+            color: #fff
+            padding: 20px 50px
+            font-size: 16px
+            border: 3px solid #fff
+            text-decoration: none
+            margin-top: 20px
+            cursor: pointer
+            font-weight: bold
+
+            @include mixins.notebook
+                font-size: 16px
+                margin-top: 18px
+                padding: 18px 45px
+        
+            @include mixins.tablet
+                font-size: 14px
+                margin-top: 16px
+                padding: 16px 40px
+
+            @include mixins.smartphone
+                font-size: 12px
+                margin-top: 14px
+                padding: 14px 35px
+                border: 2px solid #fff
+
+            &:hover
+                background-color: #fff
+                color: #000
+
+        
+
+        &-title
+            font-family: 'Roboto', sans-serif
+            font-size: 50px
+
+            @include mixins.notebook
+                font-size: 45px
+        
+            @include mixins.tablet
+                font-size: 40px
+
+            @include mixins.smartphone
+                font-size: 35px
+
+            &-descricao
+                font-size: 30px
+                font-weight: bold
+                margin: 0 auto
+                width-space: nowrap
+                overflow: hidden
+
+                @include mixins.tablet
+                    font-size: 25px
+
+                @include mixins.smartphone
+                    font-size: 20px
+            
+            .animation
+                animation: typing 4s 1s normal
+
+                // @keyframes typing
+                //     0% {
+                //         width: 0
+                //     } 
+                        
+                //     100% {
+                //         width: 18em
+                //     }
+                        
+
+                @include mixins.notebook
+        
+                @include mixins.tablet
+
+                @include mixins.smartphone
+
+        
+        
+ 
+
 .section
         @include mixins.centralizar
         flex-direction: column
