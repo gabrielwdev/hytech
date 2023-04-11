@@ -1,0 +1,81 @@
+@use 'variables'
+@use 'mixins'
+
+.informacoes
+    background-image: url(../img/bg-2.png)
+    background-color: #ffffff
+    padding: 50px
+    display: grid
+
+    justify-content: center
+    column-gap: 10px
+    border-top: 5px solid #35353535
+
+    @include mixins.notebook
+        grid-template-columns: repeat(2, 1fr)
+
+    @include mixins.tablet
+        grid-template-columns: 1fr
+        padding: 50px
+
+    &-canais
+        display: flex
+        flex-direction: column
+        row-gap: 10px
+
+        h2
+            font-family: "Roboto", sans-serif
+            font-size: 18px  
+
+        p
+            font-size: 14px   
+        
+        a
+            text-decoration: none
+            color: #363636
+            &:hover
+                color: #ffbf00
+
+        div
+            display: flex 
+            column-gap: 10px
+
+        address, div
+            font-size: 14px
+
+        ul 
+            display: flex
+            list-style: none
+            column-gap: 10px
+
+            .bi
+                width: 20px
+                height: 20px
+                color: #363636
+
+                &:hover
+                    color: #ffbf00
+        
+    &-link
+        color: #363636
+
+        &:hover
+            color: #ffbf00
+    
+    &-maps
+        display: flex
+        justify-content: center
+        .mapa
+            width: 400px
+            height: 250px
+            @include mixins.notebook
+            justify-content: center
+            margin-top: 50px
+
+            @include mixins.tablet
+                margin: 20px auto
+            @include mixins.smartphone
+                width: 300px
+                height: 190px
+                background-color: red
+                
