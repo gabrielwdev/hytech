@@ -133,22 +133,22 @@
 }
 .section-titulo {
   font-family: "Roboto", sans-serif;
-  font-size: 35px;
+  font-size: 25px;
   text-transform: uppercase;
 }
 @media (max-width: 1000px) {
   .section-titulo {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 @media (max-width: 900px) {
   .section-titulo {
-    font-size: 25px;
+    font-size: 18px;
   }
 }
 .section-descricao {
-  font-family: "Noto Serif Lao", serif;
-  font-size: 23px;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
   color: #5a5a5a;
   text-align: center;
 }
@@ -196,12 +196,24 @@
   align-items: center;
   padding: 2rem;
   font-weight: 700;
-  font-size: 21px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
   color: #353535;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   row-gap: 50px;
+}
+@media (max-width: 900px) {
+  .main-itens-lista-categoria {
+    font-size: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .main-itens-lista-categoria {
+    font-size: 15px;
+  }
 }
 .main-itens-lista-categoria-titulo {
   text-align: center;
@@ -233,14 +245,21 @@
   width: 13rem;
   border-radius: 20px;
 }
-.main-itens-lista-cards-titulo {
-  font-size: 18px;
-  text-transform: uppercase;
-}
 .main-itens-lista-cards-descricao {
-  font-size: 18px;
+  list-style: circle;
+  font-size: 15px;
   color: #5a5a5a;
   padding-left: 2rem;
+}
+@media (max-width: 900px) {
+  .main-itens-lista-cards-descricao {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .main-itens-lista-cards-descricao {
+    font-size: 13px;
+  }
 }
 .main-aside {
   margin: 0.5rem;
@@ -256,11 +275,22 @@
 }
 .main-aside-titulo {
   color: #353535;
-  font-size: 20px;
   text-align: center;
   margin: 20px auto;
-  text-transform: uppercase;
+  font-weight: bolder;
   font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+@media (max-width: 900px) {
+  .main-aside-titulo {
+    font-size: 19px;
+  }
+}
+@media (max-width: 600px) {
+  .main-aside-titulo {
+    font-size: 18px;
+  }
 }
 .main-aside-lista {
   display: flex;
@@ -289,10 +319,10 @@
 }
 .main-aside-lista-itens-titulo {
   font-family: "Roboto", sans-serif;
-  color: #353535;
-  margin: 15px 0;
+  color: #5a5a5a;
+  margin: 10px 0;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=produtos.css.map */

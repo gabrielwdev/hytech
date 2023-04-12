@@ -131,18 +131,18 @@
 
         &-titulo
             font-family: 'Roboto', sans-serif
-            font-size: 35px
+            font-size: 25px
             text-transform: uppercase
 
             @include mixins.notebook
-                font-size: 30px
+                font-size: 20px
 
             @include mixins.tablet
-                font-size: 25px
+                font-size: 18px
 
         &-descricao
-            font-family: 'Noto Serif Lao', serif
-            font-size: 23px
+            font-family: 'Arial', sans-serif
+            font-size: 18px
             color: #5a5a5a
             text-align: center
 
@@ -179,12 +179,20 @@
                 @include mixins.centralizar
                 padding: 2rem
                 font-weight: 700
-                font-size: 21px
+                font-family: 'Roboto', sans-serif
+                font-size: 15px
+                text-transform: uppercase
                 color: variables.$secondary-color
                 background-color: variables.$bg-color
                 display: flex
                 flex-direction: column
                 row-gap: 50px
+
+                @include mixins.tablet
+                    font-size: 16px
+
+                @include mixins.tablet
+                    font-size: 15px
 
                 &-titulo
                     text-align: center
@@ -217,15 +225,20 @@
                         width: 13rem
                         border-radius: 20px
 
-                &-titulo
-                    font-size: 18px
-                    text-transform: uppercase
-
 
                 &-descricao
-                    font-size: 18px
+                    list-style: circle
+                    font-size: 15px
                     color: #5a5a5a
                     padding-left: 2rem
+
+                    @include mixins.tablet
+                        font-size: 14px
+
+                    @include mixins.smartphone
+                        font-size: 13px
+
+
 
     &-aside
             margin: 0.5rem
@@ -240,11 +253,18 @@
 
             &-titulo
                 color: variables.$secondary-color
-                font-size: 20px
                 text-align: center
                 margin: 20px auto
-                text-transform: uppercase
+                font-weight: bolder
                 font-family: 'Roboto', sans-serif
+                font-size: 20px
+                text-transform: uppercase
+
+                @include mixins.tablet
+                    font-size: 19px
+
+                @include mixins.smartphone
+                    font-size: 18px
 
             &-lista
                 @include mixins.centralizar
@@ -270,9 +290,10 @@
 
                     &-titulo
                         font-family: 'Roboto', sans-serif
-                        color: variables.$secondary-color
-                        margin: 15px 0 
+                        color: #5a5a5a
+                        margin: 10px 0 
                         text-transform: uppercase
-                        font-size: 18px
+                        font-size: 16px
+
                             
         
