@@ -6,3 +6,5 @@
 <p>O site <a>www.hytechph.com.br</a> atualmente se encontra desatualizado.</p>
 
 <p>Hytech Vale uma empresa do seguimento de pneumática e hidráulica.</p>
+
+<p>Acesse: <a href="https://pgbsm.github.io/hytech/">pgbsm.github.io/hytech/</a> para visualizar o andamento do projeto.</p>
