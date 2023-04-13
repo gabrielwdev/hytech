@@ -8,12 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Lao:wght@600&family=Roboto:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Lao:wght@300&family=Roboto:wght@700+400&display=swap"
       rel="stylesheet"
     />
     <!-- Folhas de estilo -->
     <link rel="stylesheet" href="css/produtos.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Animações css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -33,24 +38,17 @@
                 <div class="meat"></div>
                 <div class="bottom"></div>
               </label>
-
               <div class="menu-drop">
                 <ul class="lista">
                   <li><a class="link1" href="index.html">HOME</a></li>
                   <li><a class="link1" href="produtos.html">PRODUTOS</a></li>
-                  <li>
-                    <a class="link1" href="produtos-x.html">Em construção</a>
-                  </li>
                 </ul>
               </div>
             </nav>
           </section>
           <ul class="header-navbar-lista">
             <li class="header-navbar-lista-item">
-              <a
-                target="_blank"
-                href="index.html"
-                class="header-navbar-lista-item-link"
+              <a href="index.html" class="header-navbar-lista-item-link"
                 >Home</a
               >
             </li>
@@ -59,228 +57,360 @@
                 >Produtos</a
               >
             </li>
-            <li class="header-navbar-lista-item">
-              <a href="produtos-x.html" class="header-navbar-lista-item-link"
-                >Em construção</a
-              >
-            </li>
           </ul>
         </nav>
       </header>
-
-      <section class="destaque">
-        <div class="destaque-caixa-destaque animation">
-          <h1 class="destaque-caixa-destaque-title animate__fadeInDown">
-            Hytech Vale
-          </h1>
-          <p class="destaque-caixa-destaque-descricao">
-            Soluções em Pneumática e Hidráulica
-          </p>
-          <a
-            class="destaque-caixa-destaque-link"
-            target="_blank"
-            href="https://wa.me/55012997013418"
-            >WhatsApp agora</a
-          >
-        </div>
-      </section>
-      <section class="section">
-        <h1 id="top" class="section-titulo">Conheça nossos produtos!</h1>
-        <p class="section-descricao">
-          Pneumática, Hidráulica e Filtros Industriais
-        </p>
-      </section>
-      <main class="main">
-        <section class="main-itens">
-          <ul class="main-itens-lista">
-            <li class="main-itens-lista-categoria">
-              <h2 class="main-itens-lista-categoria-titulo">Automação</h2>
-
-              <ul class="main-itens-lista-categoria-elementos">
-                <li class="main-itens-lista-cards card1-1">
-                  <img
-                    src="img/automacao_01.png"
-                    alt="Boxe"
-                    class="main-itens-lista-cards-img"
-                  />
-                  <ul class="main-itens-lista-cards-descricao">
-                    <li>Atuadores FRL</li>
-                    <li>Válvulas Solenóide</li>
-                    <li>Válvulas Direcionais</li>
-                    <li>Conexões</li>
+      <div class="container-conteudo">
+        <aside class="aside">
+          <div class="aside-guia">
+            <a class="aside-guia-desabilitado" href="index.html">Home</a>
+            <p>/</p>
+            <a class="aside-guia-habilitado" href="produtos.html">Produtos</a>
+          </div>
+          <div class="aside-categoria">
+            <p>Produtos categorias</p>
+            <ul class="aside-categoria-lista">
+              <li class="aside-categoria-lista-seguimento">
+                <div class="triangulo1" id="tri1"></div>
+                <a class="aside-categoria-lista-seguimento-link" href="">
+                  Automação Industrial
+                  <ul
+                    class="aside-categoria-lista-seguimento-link-lista lista1"
+                  >
+                    <li class="produto1-1">
+                      <a class="produtos-link" href="">Atuadores FRL</a>
+                    </li>
+                    <li class="produto1-2">
+                      <a class="produtos-link" href="">Válvulas solenoide</a>
+                    </li>
+                    <li class="produto1-3">
+                      <a class="produtos-link" href="">Conjunto lubrefil</a>
+                    </li>
                   </ul>
-                </li>
-                <li class="main-itens-lista-cards card1-2">
-                  <img
-                    src="img/automacao_02.png"
-                    alt="Crossfit"
-                    class="main-itens-lista-cards-img"
-                  />
-                  <ul class="main-itens-lista-cards-descricao">
-                    <li>Tubos</li>
-                    <li>Cilindros Pneumáticos</li>
-                    <li>Guias Lineares</li>
+                </a>
+              </li>
+              <li class="aside-categoria-lista-seguimento">
+                <div class="triangulo2" id="tri2"></div>
+                <a class="aside-categoria-lista-seguimento-link" href="">
+                  Mangueiras e Conexões
+                  <ul
+                    class="aside-categoria-lista-seguimento-link-lista lista2"
+                  >
+                    <li class="produto2-1">
+                      <a class="produtos-link" href=""
+                        >Mangueiras de alta pressão</a
+                      >
+                    </li>
+                    <li class="produto2-2">
+                      <a class="produtos-link" href=""
+                        >Mangueiras de alta pressão</a
+                      >
+                    </li>
+                    <li class="produto2-3">
+                      <a class="produtos-link" href="">Engates rápidos</a>
+                    </li>
                   </ul>
-                </li>
-                <li class="main-itens-lista-cards card1-3">
-                  <img
-                    src="img/automacao_03.png"
-                    alt="Natação"
-                    class="main-itens-lista-cards-img"
-                  />
-                  <ul class="main-itens-lista-cards-descricao">
-                    <li>Servo – Motores</li>
-                    <li>Cilindro sem Haste</li>
-                    <li>Conjuntos Lubrefil</li>
+                </a>
+              </li>
+              <li class="aside-categoria-lista-seguimento">
+                <div class="triangulo3" id="tri3"></div>
+                <a class="aside-categoria-lista-seguimento-link" href="">
+                  Hidráulica Industrial
+                  <ul
+                    class="aside-categoria-lista-seguimento-link-lista lista3"
+                  >
+                    <li class="produto3-1">
+                      <a class="produtos-link" href="">Unidade hidráulica</a>
+                    </li>
+                    <li class="produto3-2">
+                      <a class="produtos-link" href="">Válvula direcional</a>
+                    </li>
+                    <li class="produto3-3">
+                      <a class="produtos-link" href=""
+                        >Válvula controladora de fluxo</a
+                      >
+                    </li>
                   </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="main-itens-lista-categoria">
-              <h2 class="main-itens-lista-categoria-titulo">
-                Conexões e Mangueiras
-              </h2>
-
-              <ul class="main-itens-lista-categoria-elementos">
-                <li class="main-itens-lista-cards card2-1">
-                  <img
-                    src="img/conexoes-mangueiras_01.png"
-                    alt="Roupas"
-                    class="main-itens-lista-cards-img"
-                  />
-                  <ul class="main-itens-lista-cards-descricao">
-                    <li>Mangueiras de baixa</li>
-                    <li>Mangueiras de alta pressão</li>
-                    <li>Conexões de baixa pressão</li>
-                    <li>Conexões de alta pressão</li>
+                </a>
+              </li>
+              <li class="aside-categoria-lista-seguimento">
+                <div class="triangulo4" id="tri4"></div>
+                <a class="aside-categoria-lista-seguimento-link" href="">
+                  Filtragem Industrial
+                  <ul
+                    class="aside-categoria-lista-seguimento-link-lista lista4"
+                  >
+                    <li class="produto4-1">
+                      <a class="produtos-link" href="">Filtros hidráulicos</a>
+                    </li>
+                    <li class="produto4-2">
+                      <a class="produtos-link" href=""
+                        >Separadores de condensados</a
+                      >
+                    </li>
+                    <li class="produto4-3">
+                      <a class="produtos-link" href=""
+                        >Filtros para ar comprimido
+                      </a>
+                    </li>
                   </ul>
-                </li>
-                <li class="main-itens-lista-cards card2-2">
-                  <img
-                    src="img/conexoes-mangueiras_02.png"
-                    alt="Basquete"
-                    class="main-itens-lista-cards-img"
-                  />
-                  <ul class="main-itens-lista-cards-descricao">
-                    <li>Engates rápidos</li>
-                    <li>Mangueira montada</li>
-                    <li>Válvulas esfera</li>
-                  </ul>
-                </li>
-                <li class="main-itens-lista-cards card2-3">
-                  <img
-                    src="img/conexoes-mangueiras_03.png"
-                    alt="Corrida"
-                    class="main-itens-lista-cards-img"
-                  />
-                  <ul class="main-itens-lista-cards-descricao">
-                    <li>Tubos Termoplásticos</li>
-                    <li>Mangueira Aspiraladas</li>
-                    <li>Adaptadores</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="main-itens-lista-categoria">
-              <h2 class="main-itens-lista-categoria-titulo">Filtragem</h2>
-
-              <ul class="main-itens-lista-categoria-elementos">
-                <li class="main-itens-lista-cards card3-1">
-                  <img
-                    src="img/filtragem_01.png"
-                    alt="Surf"
-                    class="main-itens-lista-cards-img"
-                  />
-                  <ul class="main-itens-lista-cards-descricao">
-                    <li>Filtros Hidráulicos</li>
-                    <li>Filtros de Processos e Microfiltração</li>
-                    <li>Filtros para ar comprimido</li>
-                    <li>Filtros para purificação de gases</li>
-                  </ul>
-                </li>
-                <li class="main-itens-lista-cards card3-2">
-                  <img
-                    src="img/filtragem_02.png"
-                    alt="Trilha"
-                    class="main-itens-lista-cards-img"
-                  />
-                  <ul class="main-itens-lista-cards-descricao">
-                    <li>Filtros para ar</li>
-                    <li>Filtros para óleos combustíveis</li>
-                    <li>Filtros para lubrificantes</li>
-                  </ul>
-                </li>
-                <li class="main-itens-lista-cards card3-3">
-                  <img
-                    src="img/filtragem_03.png"
-                    alt="Tenis"
-                    class="main-itens-lista-cards-img"
-                  />
-                  <ul class="main-itens-lista-cards-descricao">
-                    <li>Filtros do combustível separadores de água</li>
-                    <li>Filtros de fluidos Refrigerantes</li>
-                    <li>Separadores de condensados</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-
-        <aside class="main-aside">
-          <h2 class="main-aside-titulo">Marcas que nós trabalhamos</h2>
-          <ul class="main-aside-lista">
-            <li class="main-aside-lista-itens">
-              <img
-                src="img/LOGO-PARKER.png"
-                alt="Parker"
-                class="main-aside-lista-itens-img"
-              />
-              <h2 class="main-aside-lista-itens-titulo">Parker</h2>
-            </li>
-            <li class="main-aside-lista-itens">
-              <img
-                src="img/LOGO-FESTO.png"
-                alt="Festo"
-                class="main-aside-lista-itens-img"
-              />
-              <h2 class="main-aside-lista-itens-titulo">Festo</h2>
-            </li>
-            <li class="main-aside-lista-itens">
-              <img
-                src="img/LOGO-GATES.png"
-                alt="Gates"
-                class="main-aside-lista-itens-img"
-              />
-              <h2 class="main-aside-lista-itens-titulo">Gates</h2>
-            </li>
-            <li class="main-aside-lista-itens">
-              <img
-                src="img/LOGO-MANULI.png"
-                alt="Manuli"
-                class="main-aside-lista-itens-img"
-              />
-              <h2 class="main-aside-lista-itens-titulo">Manuli</h2>
-            </li>
-            <li class="main-aside-lista-itens">
-              <img
-                src="img/LOGO-METAL.png"
-                alt="Metal Work"
-                class="main-aside-lista-itens-img"
-              />
-              <h2 class="main-aside-lista-itens-titulo">Metal Work</h2>
-            </li>
-            <li class="main-aside-lista-itens">
-              <img
-                src="img/LOGO-MICRO.png"
-                alt="Micro automação"
-                class="main-aside-lista-itens-img"
-              />
-              <h2 class="main-aside-lista-itens-titulo">Micro automação</h2>
-            </li>
-          </ul>
+                </a>
+              </li>
+            </ul>
+          </div>
         </aside>
-      </main>
+        <main class="main">
+          <article class="main-introducao">
+            <h1>Produtos</h1>
+            <div>
+              <img src="img/conexoes-mangueiras_03.jpg" alt="" />
+              <p>
+                A Hytech Vale é uma empresa que atua no setor de Automação
+                Industrial, nas linhas de Pneumática, Hidráulica e Filtragem
+                Industrial, mantendo uma posição de destaque no mercado há mais
+                de 10 anos.
+              </p>
+            </div>
+          </article>
+          <section class="main-produtos">
+            <h2 class="main-produtos-title">Todas as categorias de produtos</h2>
+            <ul class="main-produtos-lista">
+              <li class="main-produtos-lista-categoria">
+                <h2 class="main-produtos-lista-categoria-titulo">
+                  Automação Industrial
+                </h2>
+                <ul class="main-produtos-lista-categoria-lista">
+                  <li class="main-produtos-lista-categoria-lista-produto">
+                    <a
+                      href=""
+                      class="main-produtos-lista-categoria-lista-produto-link"
+                    >
+                      <img
+                        src="img/automacao_01.png"
+                        alt=""
+                        class="main-produtos-lista-categoria-lista-produto-link-img"
+                      />
+                      <h3
+                        class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
+                      >
+                        Atuadores FRL
+                      </h3>
+                    </a>
+                  </li>
+                  <li class="main-produtos-lista-categoria-lista-produto">
+                    <a
+                      href=""
+                      class="main-produtos-lista-categoria-lista-produto-link"
+                    >
+                      <img
+                        src="img/automacao_02.png"
+                        alt=""
+                        class="main-produtos-lista-categoria-lista-produto-link-img"
+                      />
+                      <h3
+                        class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
+                      >
+                        Válvulas solenoide
+                      </h3>
+                    </a>
+                  </li>
+                  <li class="main-produtos-lista-categoria-lista-produto">
+                    <a
+                      href=""
+                      class="main-produtos-lista-categoria-lista-produto-link"
+                    >
+                      <img
+                        src="img/automacao_03.png"
+                        alt=""
+                        class="main-produtos-lista-categoria-lista-produto-link-img"
+                      />
+                      <h3
+                        class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
+                      >
+                        Conjuntos lubrefil
+                      </h3>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-produtos-lista-categoria">
+                <h2 class="main-produtos-lista-categoria-titulo">
+                  Conexões e mangueiras
+                </h2>
+                <ul class="main-produtos-lista-categoria-lista">
+                  <li class="main-produtos-lista-categoria-lista-produto">
+                    <a
+                      href=""
+                      class="main-produtos-lista-categoria-lista-produto-link"
+                    >
+                      <img
+                        src="img/conexoes-mangueiras_01.png"
+                        alt=""
+                        class="main-produtos-lista-categoria-lista-produto-link-img"
+                      />
+                      <h3
+                        class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
+                      >
+                        Mangueiras de alta pressão
+                      </h3>
+                    </a>
+                  </li>
+                  <li class="main-produtos-lista-categoria-lista-produto">
+                    <a
+                      href=""
+                      class="main-produtos-lista-categoria-lista-produto-link"
+                    >
+                      <img
+                        src="img/conexoes-mangueiras_02.png"
+                        alt=""
+                        class="main-produtos-lista-categoria-lista-produto-link-img"
+                      />
+                      <h3
+                        class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
+                      >
+                        Mangueiras de baixa pressão
+                      </h3>
+                    </a>
+                  </li>
+                  <li class="main-produtos-lista-categoria-lista-produto">
+                    <a
+                      href=""
+                      class="main-produtos-lista-categoria-lista-produto-link"
+                    >
+                      <img
+                        src="img/conexoes-mangueiras_03.png"
+                        alt=""
+                        class="main-produtos-lista-categoria-lista-produto-link-img"
+                      />
+                      <h3
+                        class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
+                      >
+                        Engates rápidos
+                      </h3>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-produtos-lista-categoria">
+                <h2 class="main-produtos-lista-categoria-titulo">
+                  Hidráulica industrial
+                </h2>
+                <ul class="main-produtos-lista-categoria-lista">
+                  <li class="main-produtos-lista-categoria-lista-produto">
+                    <a
+                      href=""
+                      class="main-produtos-lista-categoria-lista-produto-link"
+                    >
+                      <img
+                        src="img/hidraulica_01.png"
+                        alt=""
+                        class="main-produtos-lista-categoria-lista-produto-link-img"
+                      />
+                      <h3
+                        class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
+                      >
+                        Unidade hidráulica
+                      </h3>
+                    </a>
+                  </li>
+                  <li class="main-produtos-lista-categoria-lista-produto">
+                    <a
+                      href=""
+                      class="main-produtos-lista-categoria-lista-produto-link"
+                    >
+                      <img
+                        src="img/hidraulica_02.png"
+                        alt=""
+                        class="main-produtos-lista-categoria-lista-produto-link-img"
+                      />
+                      <h3
+                        class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
+                      >
+                        Válvula direcional
+                      </h3>
+                    </a>
+                  </li>
+                  <li class="main-produtos-lista-categoria-lista-produto">
+                    <a
+                      href=""
+                      class="main-produtos-lista-categoria-lista-produto-link"
+                    >
+                      <img
+                        src="img/hidraulica_03.png"
+                        alt=""
+                        class="main-produtos-lista-categoria-lista-produto-link-img"
+                      />
+                      <h3
+                        class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
+                      >
+                        Váçvula controladora de fluxo
+                      </h3>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-produtos-lista-categoria">
+                <h2 class="main-produtos-lista-categoria-titulo">
+                  Filtragem industrial
+                </h2>
+                <ul class="main-produtos-lista-categoria-lista">
+                  <li class="main-produtos-lista-categoria-lista-produto">
+                    <a
+                      href=""
+                      class="main-produtos-lista-categoria-lista-produto-link"
+                    >
+                      <img
+                        src="img/filtragem_01.png"
+                        alt=""
+                        class="main-produtos-lista-categoria-lista-produto-link-img"
+                      />
+                      <h3
+                        class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
+                      >
+                        Filtros hidráulicos
+                      </h3>
+                    </a>
+                  </li>
+                  <li class="main-produtos-lista-categoria-lista-produto">
+                    <a
+                      href=""
+                      class="main-produtos-lista-categoria-lista-produto-link"
+                    >
+                      <img
+                        src="img/filtragem_02.png"
+                        alt=""
+                        class="main-produtos-lista-categoria-lista-produto-link-img"
+                      />
+                      <h3
+                        class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
+                      >
+                        Separadores de condensados
+                      </h3>
+                    </a>
+                  </li>
+                  <li class="main-produtos-lista-categoria-lista-produto">
+                    <a
+                      href=""
+                      class="main-produtos-lista-categoria-lista-produto-link"
+                    >
+                      <img
+                        src="img/filtragem_03.png"
+                        alt=""
+                        class="main-produtos-lista-categoria-lista-produto-link-img"
+                      />
+                      <h3
+                        class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
+                      >
+                        Filtros para ar comprimido
+                      </h3>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
       <footer class="footer">
         <nav class="footer-navbar">
           <img
@@ -317,5 +447,6 @@
         </nav>
       </footer>
     </div>
+    <script src="js/produtos.js"></script>
   </body>
 </html>

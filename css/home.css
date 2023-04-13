@@ -13,7 +13,7 @@
   justify-content: center;
   color: white;
   padding: 50px;
-  height: 55vh;
+  height: 25rem;
   background-image: url(../img/1.png);
   background-size: 100vw;
   background-repeat: no-repeat;
@@ -126,7 +126,7 @@
   animation: typing 4s 1s normal;
 }
 .atalho-produtos {
-  background-color: #383838;
+  background-color: #000000;
   background-image: url(../img/bg-2.png);
   width: 100vw;
   padding: 50px 100px;
