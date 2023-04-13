@@ -1,0 +1,80 @@
+@use 'mixins'
+@use 'variables'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.container-conteudo
+    display: grid
+    grid-template-columns: 27% 73%
+    padding: 3%
+
+    .aside
+        @include mixins.centralizar
+        justify-content: flex-start 
+        align-items: flex-start
+        flex-direction: column
+        font-family: 'Roboto', sans-serif
+        
+        &-guia
+            display: flex
+            column-gap: 10px
+            color: #585858
+
+            a
+                text-decoration: none
+
+            &-desabilitado
+                color: #585858
+
+            &-habilitado
+                color: #3b3b3b
+
+        &-categoria
+
+            p
+                width: 18rem
+                height: 2rem
+                background-color: #ffc000
+                color: #000
+                @include mixins.centralizar
+                font-size: 1rem
+                text-transform: uppercase
+                margin: 1.5rem 0
+
+            &-lista
+                margin: 0 auto
+                padding: 0 1rem
+                line-height: 2rem
+
+                &-seguimento
+                    list-style: none
+                    display: grid
+                    grid-template-columns: 0.5rem 1fr
+                    align-items: center
+                    column-gap: 0.5rem
+
+                    .triangulo1, .triangulo2, .triangulo3, .triangulo4
+                            width: 0
+                            height: 0
+                            border-top: .35rem solid transparent
+                            border-bottom: .35rem solid transparent
+                            border-left: .5rem solid #000000
+
+                    .triangulo1.active, .triangulo2.active, .triangulo3.active, .triangulo4.active
+                        transform: rotate(90deg)                   
+
+                    &-link
+                        align-items: center
+                        text-decoration: none
+                        color: #000
+                
+                        
+
+
+
+    .main
+
+    

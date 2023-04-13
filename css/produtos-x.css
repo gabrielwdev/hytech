@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-conteudo {
+  display: grid;
+  grid-template-columns: 27% 73%;
+  padding: 3%;
+}
+.container-conteudo .aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.container-conteudo .aside-guia {
+  display: flex;
+  column-gap: 10px;
+  color: #585858;
+}
+.container-conteudo .aside-guia a {
+  text-decoration: none;
+}
+.container-conteudo .aside-guia-desabilitado {
+  color: #585858;
+}
+.container-conteudo .aside-guia-habilitado {
+  color: #3b3b3b;
+}
+.container-conteudo .aside-categoria p {
+  width: 18rem;
+  height: 2rem;
+  background-color: #ffc000;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+}
+.container-conteudo .aside-categoria-lista {
+  margin: 0 auto;
+  padding: 0 1rem;
+  line-height: 2rem;
+}
+.container-conteudo .aside-categoria-lista-seguimento {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 0.5rem 1fr;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.container-conteudo .aside-categoria-lista-seguimento .triangulo1, .container-conteudo .aside-categoria-lista-seguimento .triangulo2, .container-conteudo .aside-categoria-lista-seguimento .triangulo3, .container-conteudo .aside-categoria-lista-seguimento .triangulo4 {
+  width: 0;
+  height: 0;
+  border-top: 0.35rem solid transparent;
+  border-bottom: 0.35rem solid transparent;
+  border-left: 0.5rem solid #000000;
+}
+.container-conteudo .aside-categoria-lista-seguimento .triangulo1.active, .container-conteudo .aside-categoria-lista-seguimento .triangulo2.active, .container-conteudo .aside-categoria-lista-seguimento .triangulo3.active, .container-conteudo .aside-categoria-lista-seguimento .triangulo4.active {
+  transform: rotate(90deg);
+}
+.container-conteudo .aside-categoria-lista-seguimento-link {
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+/*# sourceMappingURL=produtos-x.css.map */
