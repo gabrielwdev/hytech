@@ -1,299 +1,180 @@
-@use 'variables'
 @use 'mixins'
+@use 'variables'
 
 *
     margin: 0
     padding: 0
     box-sizing: border-box
 
-.destaque
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center 
-    color: white
-    padding: 50px
-    height: 55vh
-    background-image: url(../img/1.png)
-    background-size: 100vw
-    background-repeat: no-repeat
-    background-color: #353535
+body
+    background-color: #E2E1DD
 
-    @include mixins.notebook
-        height: 50vh
 
-    @include mixins.tablet
-        height: 35vh
-
-    @include mixins.smartphone
-        height: 25vh
-        padding: 0
-    
-    &-caixa-destaque
-        display: flex
-        flex-direction: column
-        align-items: center
+    .container-conteudo
+        display: grid
         justify-content: center
+        grid-template-columns: 20rem 60rem
+        padding: 3%
 
-        &-link
-            color: #fff
-            padding: 20px 50px
-            font-size: 16px
-            border: 3px solid #fff
-            text-decoration: none
-            margin-top: 20px
-            cursor: pointer
-            font-weight: bold
-
-            @include mixins.notebook
-                font-size: 16px
-                margin-top: 18px
-                padding: 18px 45px
-        
-            @include mixins.tablet
-                font-size: 14px
-                margin-top: 16px
-                padding: 16px 40px
-
-            @include mixins.smartphone
-                font-size: 12px
-                margin-top: 14px
-                padding: 14px 35px
-                border: 2px solid #fff
-
-            &:hover
-                background-color: #fff
-                color: #000
-
-        
-
-        &-title
-            font-family: 'Roboto', sans-serif
-            font-size: 50px
-
-            @include mixins.notebook
-                font-size: 45px
-        
-            @include mixins.tablet
-                font-size: 40px
-
-            @include mixins.smartphone
-                font-size: 35px
-
-            &-descricao
-                font-size: 30px
-                font-weight: bold
-                margin: 0 auto
-                width-space: nowrap
-                overflow: hidden
-
-                @include mixins.tablet
-                    font-size: 25px
-
-                @include mixins.smartphone
-                    font-size: 20px
-            
-            .animation
-                animation: typing 4s 1s normal
-
-                // @keyframes typing
-                //     0% {
-                //         width: 0
-                //     } 
-                        
-                //     100% {
-                //         width: 18em
-                //     }
-                        
-
-                @include mixins.notebook
-        
-                @include mixins.tablet
-
-                @include mixins.smartphone
-
-        
-        
-
-
-.section
-        @include mixins.centralizar
-        flex-direction: column
-        row-gap: 5px
-        margin: 2rem 2rem 0 2rem
-        padding: 2rem
-        background-color: #fff
-        border-top: 5px solid variables.$ilustrator-color
-
-        &-titulo, &-descricao
+        .aside
             @include mixins.centralizar
-            text-align: center
-
-        &-titulo
-            font-family: 'Roboto', sans-serif
-            font-size: 25px
-            text-transform: uppercase
-
-            @include mixins.notebook
-                font-size: 20px
-
-            @include mixins.tablet
-                font-size: 18px
-
-        &-descricao
-            font-family: 'Arial', sans-serif
-            font-size: 18px
-            color: #5a5a5a
-            text-align: center
-
-            @include mixins.notebook
-                font-size: 20px
-
-            @include mixins.tablet
-                font-size: 15px
-
-.main
-    padding: 1.5rem
-    display: flex
-    align-items: flex-start
-    @include mixins.smartphone
-        align-items: center
-        flex-direction: column
-
-    &-itens
-        width: 900px
-            
-        @include mixins.smartphone
-            width: 100%
-            
-        &-lista
-            display: flex
-            justify-content: center
+            justify-content: flex-start 
+            align-items: flex-start
             flex-direction: column
-            padding: 10px         
-            row-gap: 50px     
+            font-family: 'Roboto', sans-serif
+            font-weight: 700
             
+            &-guia
+                display: flex
+                column-gap: 10px
+                color: #585858
+
+                a
+                    text-decoration: none
+
+                &-desabilitado
+                    color: #585858
+
+                &-habilitado
+                    color: #3b3b3b
 
             &-categoria
-                border-top: 5px solid variables.$ilustrator-color
-                @include mixins.centralizar
-                padding: 2rem
-                font-weight: 700
-                font-family: 'Roboto', sans-serif
-                font-size: 15px
-                text-transform: uppercase
-                color: variables.$secondary-color
-                background-color: variables.$bg-color
-                display: flex
-                flex-direction: column
-                row-gap: 50px
+                padding-right: 2rem
+                border-right: 2px solid #747577
+                height: 100%
 
-                @include mixins.tablet
-                    font-size: 16px
-
-                @include mixins.tablet
-                    font-size: 15px
-
-                &-titulo
-                    text-align: center
-
-                &-elementos
-                    display: flex
-                    flex-wrap: wrap
-                    column-gap: 20px
-                    justify-content: center
-
-            &-cards
-                list-style: none
-                width: 15rem
-                height: 24rem
-                padding: 10px
-                display: grid
-                gap: 50px
-                align-items: center
-                transition-property: border
-                transition-duration: 0.1s
-                background-color: variables.$bg-color
-
-                &:hover
-                    box-shadow: 1px 0px 20px #afafaf
-                    border-radius: 25px
-
-
-                &-img
-                        height: 10rem
-                        width: 13rem
-                        border-radius: 20px
-
-
-                &-descricao
-                    list-style: circle
-                    font-size: 15px
-                    color: #5a5a5a
-                    padding-left: 2rem
-
-                    @include mixins.tablet
-                        font-size: 14px
-
-                    @include mixins.smartphone
-                        font-size: 13px
-
-
-
-    &-aside
-            margin: 0.5rem
-            background-color: variables.$bg-color
-            width: 350px
-            padding: 1rem
-            border-top: 5px solid variables.$ilustrator-color
-
-            @include mixins.smartphone
-                width: 100%
-                
-
-            &-titulo
-                color: variables.$secondary-color
-                text-align: center
-                margin: 20px auto
-                font-weight: bolder
-                font-family: 'Roboto', sans-serif
-                font-size: 20px
-                text-transform: uppercase
-
-                @include mixins.tablet
-                    font-size: 19px
-
-                @include mixins.smartphone
-                    font-size: 18px
-
-            &-lista
-                @include mixins.centralizar
-                flex-direction: column
-
-                &-itens
+                p
+                    width: 18rem
+                    height: 2rem
+                    background-color: #ffc000
+                    color: #000
                     @include mixins.centralizar
-                    flex-direction: column
-                    padding: 15px
-                    gap: 10px
-                    transition-property: border
-                    transition-duration: 0.1s
+                    font-size: 1rem
+                    text-transform: uppercase
+                    margin: 1.5rem 0
 
-                    &:hover
-                        // border: 1px solid variables.$secondary-color
-                        box-shadow: 1px 0px 20px #afafaf
-                        border-radius: 20px
-                        cursor: pointer
+                &-lista
+                    margin: 0 auto
+                    padding: 0 1rem
+                    line-height: 2rem
 
-                    &-img
-                        width: 15rem
-                        border-radius: 20px
+                    &-seguimento
+                        list-style: none
+                        display: grid
+                        grid-template-columns: 0.5rem 1fr
+                        align-items: center
+                        column-gap: 0.5rem
 
-                    &-titulo
+                        &-link
+                            align-items: center
+                            text-decoration: none
+                            color: #000
+                            width: 15rem
+
+                            &-lista
+                                display: none
+                                padding: 0 25px
+                                width: 16.5rem
+                                list-style: none
+                                font-size: 15px
+                                transition-property: display
+
+                                .produtos-link
+                                    text-decoration: none
+                                    color: #555555
+
+
+                        .triangulo1, .triangulo2, .triangulo3, .triangulo4
+                                width: 0
+                                height: 0
+                                border-top: .35rem solid transparent
+                                border-bottom: .35rem solid transparent
+                                border-left: .5rem solid #000000
+
+                        .triangulo1.active, .triangulo2.active, .triangulo3.active, .triangulo4.active
+                            border-left: .35rem solid transparent
+                            border-right: .35rem solid transparent
+                            border-top: .5rem solid #000000       
+
+                        #tri1.active ~ .lista1, #tri2.active ~ .lista2, #tri3.active ~ .lista3, #tri4.active ~ .lista4
+                            display: block
+
+        .main
+            padding: 2.5rem 2rem
+            font-family: 'Roboto',sans-serif
+
+            &-introducao
+                width: 100%
+ 
+                h1
+                    border-bottom: 2px solid #747577
+                    padding: 0 0 1rem 2rem
+                    font-weight: 400
+                    font-size: 23px
+                    color: #464647
+                
+                div
+                    display: flex
+
+                    img
+                        padding: 1rem
+                        width: 9rem
+                        height: 9rem
+                        border-radius: 2rem
+
+                    p
+                        margin: 0 auto
+                        padding: 2rem
                         font-family: 'Roboto', sans-serif
-                        color: #5a5a5a
-                        margin: 10px 0 
-                        text-transform: uppercase
-                        font-size: 16px
+                        font-weight: 600
+                        color: #4b4b4b
+                        font-size: 18px
+                
+            &-produtos
+                margin-top: 2rem 
 
-                            
+                &-title
+                    border-bottom: 2px solid #464647
+                    padding: 0 0 1rem 2rem
+                    font-weight: 400
+                    font-size: 23px
+                    color: #464647
+
+                &-lista
+
+                    &-categoria
+                        list-style: none
+                        padding: 0 2rem
+
+                        &-titulo
+                            padding: 3rem 0 1rem 0
+                            font-weight: 400
+                            font-size: 22px
+                            color: #464647
+                        
+                        &-lista
+                            display: flex
+                            column-gap: 2rem
+
+                            &-produto
+                                list-style: none
+
+                                &-link
+                                    text-decoration: none
+                                    color: #1b1b1b
+                                    display: flex
+                                    align-items: center
+                                    flex-direction: column
+                                    row-gap: .7rem
+
+                                    &-img
+                                        width: 12rem
+                                        height: 10rem
+
+                                    &-subtitulo
+                                        text-align: center
+                                        width: 10rem
+                                        font-size: 16px
+                                            
+
         
