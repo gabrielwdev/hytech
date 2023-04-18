@@ -47,15 +47,13 @@ body .container-conteudo .filtros-drop-btn {
   width: 100%;
   border: none;
   border-radius: 2rem;
-  background-color: #ffc000;
-}
-body .container-conteudo .filtros-drop-btn-link {
+  background-color: #eeb200;
   color: #000000;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
-body .container-conteudo .drop {
+body .container-conteudo .filtros-drop-btn.active + .drop-categoria {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,26 +62,65 @@ body .container-conteudo .drop {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
+body .container-conteudo .drop-categoria p {
+  text-transform: uppercase;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  width: 95%;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc71e;
+}
 @media (max-width: 900px) {
-  body .container-conteudo .drop {
+  body .container-conteudo .drop-categoria {
     display: none;
   }
 }
-body .container-conteudo .drop-guia {
+body .container-conteudo .drop-categoria-lista {
   display: flex;
-  column-gap: 10px;
-  color: #585858;
+  flex-direction: column;
+  gap: 10px;
+  color: #000000;
 }
-body .container-conteudo .drop-guia a {
+body .container-conteudo .drop-categoria-lista-seguimento {
+  list-style: none;
+}
+body .container-conteudo .drop-categoria-lista-seguimento div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: left;
+  column-gap: 1rem;
+}
+body .container-conteudo .drop-categoria-lista-seguimento div .triangulo5, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo6, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo7, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo8 {
+  width: 0;
+  height: 0;
+  background-color: #E2E1DD;
+  border-right: transparent;
+  border-top: 0.35rem solid transparent;
+  border-bottom: 0.35rem solid transparent;
+  border-left: 0.5rem solid #000000;
+}
+body .container-conteudo .drop-categoria-lista-seguimento div .triangulo5.active, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo6.active, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo7.active, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo8.active {
+  border-left: 0.35rem solid transparent;
+  border-right: 0.35rem solid transparent;
+  border-top: 0.5rem solid #000000;
+}
+body .container-conteudo .drop-categoria-lista-seguimento div .triangulo5.active #tri5.active + .lista5, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo5.active #tri5.active + .lista6, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo5.active #tri5.active + .lista7, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo5.active #tri5.active + .lista8, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo6.active #tri5.active + .lista5, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo6.active #tri5.active + .lista6, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo6.active #tri5.active + .lista7, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo6.active #tri5.active + .lista8, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo7.active #tri5.active + .lista5, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo7.active #tri5.active + .lista6, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo7.active #tri5.active + .lista7, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo7.active #tri5.active + .lista8, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo8.active #tri5.active + .lista5, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo8.active #tri5.active + .lista6, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo8.active #tri5.active + .lista7, body .container-conteudo .drop-categoria-lista-seguimento div .triangulo8.active #tri5.active + .lista8 {
+  display: block;
+}
+body .container-conteudo .drop-categoria-lista-seguimento-link {
   text-decoration: none;
+  color: #000;
 }
-body .container-conteudo .drop-guia-desabilitado {
-  color: #585858;
+body .container-conteudo .drop-categoria-lista-seguimento-link-lista {
+  margin-top: 2rem;
+  padding-left: 2rem;
+  display: none;
 }
-body .container-conteudo .drop-guia-habilitado {
-  color: #3b3b3b;
-}
-body .container-conteudo .drop-categoria p {
+body .container-conteudo .drop-categoria-categoria p {
   margin-left: 2.5%;
   width: 95%;
   height: 2rem;
@@ -100,25 +137,25 @@ body .container-conteudo .drop-categoria p {
   font-weight: 700;
   text-align: left;
 }
-body .container-conteudo .drop-categoria-lista {
+body .container-conteudo .drop-categoria-categoria-lista {
   margin: 0 auto;
   padding: 0 1rem;
   line-height: 2rem;
 }
-body .container-conteudo .drop-categoria-lista-seguimento {
+body .container-conteudo .drop-categoria-categoria-lista-seguimento {
   list-style: none;
   display: grid;
   grid-template-columns: 0.5rem 1fr;
   align-items: center;
   column-gap: 0.5rem;
 }
-body .container-conteudo .drop-categoria-lista-seguimento-link {
+body .container-conteudo .drop-categoria-categoria-lista-seguimento-link {
   align-items: center;
   text-decoration: none;
   color: #000;
   width: 15rem;
 }
-body .container-conteudo .drop-categoria-lista-seguimento-link-lista {
+body .container-conteudo .drop-categoria-categoria-lista-seguimento-link-lista {
   display: none;
   padding: 0 25px;
   width: 16.5rem;
@@ -126,23 +163,22 @@ body .container-conteudo .drop-categoria-lista-seguimento-link-lista {
   font-size: 15px;
   transition-property: display;
 }
-body .container-conteudo .drop-categoria-lista-seguimento-link-lista .produtos-link {
+body .container-conteudo .drop-categoria-categoria-lista-seguimento-link-lista .produtos-link {
   text-decoration: none;
   color: #555555;
 }
-body .container-conteudo .drop-categoria-lista-seguimento .triangulo1, body .container-conteudo .drop-categoria-lista-seguimento .triangulo2, body .container-conteudo .drop-categoria-lista-seguimento .triangulo3, body .container-conteudo .drop-categoria-lista-seguimento .triangulo4 {
-  width: 0;
-  height: 0;
+body .container-conteudo .drop-categoria-categoria-lista-seguimento .triangulo1, body .container-conteudo .drop-categoria-categoria-lista-seguimento .triangulo2, body .container-conteudo .drop-categoria-categoria-lista-seguimento .triangulo3, body .container-conteudo .drop-categoria-categoria-lista-seguimento .triangulo4 {
+  background-color: transpare nt;
   border-top: 0.35rem solid transparent;
   border-bottom: 0.35rem solid transparent;
-  border-left: 0.5rem solid #000000;
+  border-left: 1rem solid #000000;
 }
-body .container-conteudo .drop-categoria-lista-seguimento .triangulo1.active, body .container-conteudo .drop-categoria-lista-seguimento .triangulo2.active, body .container-conteudo .drop-categoria-lista-seguimento .triangulo3.active, body .container-conteudo .drop-categoria-lista-seguimento .triangulo4.active {
+body .container-conteudo .drop-categoria-categoria-lista-seguimento .triangulo1.active, body .container-conteudo .drop-categoria-categoria-lista-seguimento .triangulo2.active, body .container-conteudo .drop-categoria-categoria-lista-seguimento .triangulo3.active, body .container-conteudo .drop-categoria-categoria-lista-seguimento .triangulo4.active {
   border-left: 0.35rem solid transparent;
   border-right: 0.35rem solid transparent;
   border-top: 0.5rem solid #000000;
 }
-body .container-conteudo .drop-categoria-lista-seguimento #tri1.active ~ .lista1, body .container-conteudo .drop-categoria-lista-seguimento #tri2.active ~ .lista2, body .container-conteudo .drop-categoria-lista-seguimento #tri3.active ~ .lista3, body .container-conteudo .drop-categoria-lista-seguimento #tri4.active ~ .lista4 {
+body .container-conteudo .drop-categoria-categoria-lista-seguimento #tri1.active ~ .lista1, body .container-conteudo .drop-categoria-categoria-lista-seguimento #tri2.active ~ .lista2, body .container-conteudo .drop-categoria-categoria-lista-seguimento #tri3.active ~ .lista3, body .container-conteudo .drop-categoria-categoria-lista-seguimento #tri4.active ~ .lista4 {
   display: block;
 }
 body .container-conteudo .aside {

@@ -43,37 +43,75 @@ body
                 width: 100%
                 border: none
                 border-radius: 2rem
-                background-color: #ffc000
+                background-color: #eeb200
+                color: #000000
+                text-decoration: none 
+                font-family: 'Roboto', sans-serif  
+                font-weight: 700
+            
+            &-btn.active + .drop-categoria
+                @include mixins.centralizar
+                justify-content: flex-start 
+                flex-direction: column
+                font-family: 'Roboto', sans-serif
+                font-weight: 700
 
-                &-link
-                    color: #000000
-                    text-decoration: none 
-                    font-family: 'Roboto', sans-serif  
-                    font-weight: 700
+                      
 
-        .drop
-            @include mixins.centralizar
-            justify-content: flex-start 
-            flex-direction: column
-            font-family: 'Roboto', sans-serif
-            font-weight: 700
+        .drop-categoria
+
+            p
+                text-transform: uppercase
+                margin-top: -1rem
+                margin-bottom: 1rem
+                width: 95%
+                height: 2rem
+                @include mixins.centralizar
+                background-color: #ffc71e
 
             @include mixins.tablet
                 display: none
-            
-            &-guia
+             
+            &-lista 
                 display: flex
-                column-gap: 10px
-                color: #585858
+                flex-direction: column
+                gap: 10px
+                color: #000000
 
-                a
-                    text-decoration: none
+                &-seguimento
+                    list-style: none
 
-                &-desabilitado
-                    color: #585858
 
-                &-habilitado
-                    color: #3b3b3b
+                    div
+                        @include mixins.centralizar
+                        justify-content: left
+                        column-gap: 1rem
+                        
+                        .triangulo5, .triangulo6, .triangulo7, .triangulo8
+                            width: 0
+                            height: 0
+                            background-color: #E2E1DD
+                            border-right: transparent
+                            border-top: .35rem solid transparent
+                            border-bottom: .35rem solid transparent
+                            border-left: .5rem solid #000000
+
+                        .triangulo5.active, .triangulo6.active, .triangulo7.active, .triangulo8.active
+                            border-left: .35rem solid transparent
+                            border-right: .35rem solid transparent
+                            border-top: .5rem solid #000000       
+
+                            #tri5.active + .lista5, #tri5.active + .lista6, #tri5.active + .lista7, #tri5.active + .lista8
+                                display: block
+                            
+                    &-link
+                        text-decoration: none
+                        color: #000
+
+                        &-lista
+                            margin-top: 2rem
+                            padding-left: 2rem
+                            display: none
 
             &-categoria
 
@@ -124,11 +162,10 @@ body
 
 
                         .triangulo1, .triangulo2, .triangulo3, .triangulo4
-                                width: 0
-                                height: 0
+                                background-color: transpare nt
                                 border-top: .35rem solid transparent
                                 border-bottom: .35rem solid transparent
-                                border-left: .5rem solid #000000
+                                border-left: 1rem solid #000000
 
                         .triangulo1.active, .triangulo2.active, .triangulo3.active, .triangulo4.active
                             border-left: .35rem solid transparent
