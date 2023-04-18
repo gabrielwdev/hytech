@@ -13,9 +13,132 @@ body
     .container-conteudo
         display: grid
         justify-content: center
-        grid-template-columns: 20rem 60rem
+        grid-template-columns: 20rem auto
         padding: 3%
 
+        @include mixins.notebook
+            grid-template-columns: 18rem auto
+
+        @include mixins.tablet
+            @include mixins.centralizar
+            display: block
+            margin: 2rem auto
+
+        @include mixins.smartphone
+
+        .filtros-drop
+            display: none
+            @include mixins.tablet
+                display: flex
+                flex-direction: column
+                row-gap: 2rem
+
+            &-titulo
+                font-family: 'Roboto', sans-serif
+                font-weight: 300
+                color: #585858
+
+            &-btn
+                height: 3rem
+                width: 100%
+                border: none
+                border-radius: 2rem
+                background-color: #ffc000
+
+                &-link
+                    color: #000000
+                    text-decoration: none 
+                    font-family: 'Roboto', sans-serif  
+                    font-weight: 700
+
+        .drop
+            @include mixins.centralizar
+            justify-content: flex-start 
+            flex-direction: column
+            font-family: 'Roboto', sans-serif
+            font-weight: 700
+
+            @include mixins.tablet
+                display: none
+            
+            &-guia
+                display: flex
+                column-gap: 10px
+                color: #585858
+
+                a
+                    text-decoration: none
+
+                &-desabilitado
+                    color: #585858
+
+                &-habilitado
+                    color: #3b3b3b
+
+            &-categoria
+
+                p
+                    margin-left: 2.5%
+                    width: 95%
+                    height: 2rem
+                    background-color: #ffc000
+                    color: #000
+                    @include mixins.centralizar
+                    justify-content: flex-start
+                    font-size: 1rem
+                    padding-left: 2rem
+                    text-transform: uppercase
+                    font-family: 'Roboto', sans-serif
+                    font-weight: 700
+                    text-align: left
+
+                &-lista
+                    margin: 0 auto
+                    padding: 0 1rem
+                    line-height: 2rem
+
+                    &-seguimento
+                        list-style: none
+                        display: grid
+                        grid-template-columns: 0.5rem 1fr
+                        align-items: center
+                        column-gap: 0.5rem
+
+                        &-link
+                            align-items: center
+                            text-decoration: none
+                            color: #000
+                            width: 15rem
+
+                            &-lista
+                                display: none
+                                padding: 0 25px
+                                width: 16.5rem
+                                list-style: none
+                                font-size: 15px
+                                transition-property: display
+
+                                .produtos-link
+                                    text-decoration: none
+                                    color: #555555
+
+
+                        .triangulo1, .triangulo2, .triangulo3, .triangulo4
+                                width: 0
+                                height: 0
+                                border-top: .35rem solid transparent
+                                border-bottom: .35rem solid transparent
+                                border-left: .5rem solid #000000
+
+                        .triangulo1.active, .triangulo2.active, .triangulo3.active, .triangulo4.active
+                            border-left: .35rem solid transparent
+                            border-right: .35rem solid transparent
+                            border-top: .5rem solid #000000       
+
+                        #tri1.active ~ .lista1, #tri2.active ~ .lista2, #tri3.active ~ .lista3, #tri4.active ~ .lista4
+                            display: block
+
+        
         .aside
             @include mixins.centralizar
             justify-content: flex-start 
@@ -23,6 +146,9 @@ body
             flex-direction: column
             font-family: 'Roboto', sans-serif
             font-weight: 700
+
+            @include mixins.tablet
+                display: none
             
             &-guia
                 display: flex
@@ -104,7 +230,8 @@ body
             font-family: 'Roboto',sans-serif
 
             &-introducao
-                width: 100%
+                @include mixins.tablet
+                    display: none
  
                 h1
                     border-bottom: 2px solid #747577
@@ -151,10 +278,13 @@ body
                             font-weight: 400
                             font-size: 22px
                             color: #464647
+                            @include mixins.tablet
+                                text-align: center
                         
                         &-lista
-                            display: flex
-                            column-gap: 2rem
+                            @include mixins.centralizar
+                            flex-wrap: wrap
+                            gap: 2rem
 
                             &-produto
                                 list-style: none
@@ -174,7 +304,10 @@ body
                                     &-subtitulo
                                         text-align: center
                                         width: 10rem
-                                        font-size: 16px
+                                        font-size: 15px
+
+                                        &:hover
+                                            text-decoration: underline 2px
                                             
 
         
