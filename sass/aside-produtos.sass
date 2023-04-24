@@ -1,0 +1,180 @@
+@use 'mixins'
+@use 'variables'
+    
+
+.filtros-drop
+    display: none
+
+    @include mixins.tablet
+        display: flex
+        flex-direction: column
+        row-gap: 2rem
+
+    // &-titulo
+    //     padding-left: 13%
+    //     font-family: 'Roboto', sans-serif
+    //     font-weight: 300
+    //     color: #585858
+
+    &-btn
+        height: 4rem
+        width: 80%
+        margin: 0 auto
+        border: none
+        border-radius: 2rem
+        background-color: #ffd900
+        color: #000000
+        text-decoration: none 
+        font-family: 'Roboto', sans-serif  
+        font-weight: 400
+        font-size: 20px
+            
+    &-btn.active + .drop-categoria
+        @include mixins.centralizar
+        justify-content: flex-start 
+        flex-direction: column
+        font-family: 'Roboto', sans-serif
+        font-weight: 700
+
+    .drop-categoria
+        display: none
+
+        h3
+            text-transform: uppercase
+            margin-top: -1rem
+            width: 70%
+            height: 2rem
+            font-size: 15px
+            @include mixins.centralizar
+            background-color: #ffe657
+
+
+             
+        &-lista 
+            @include mixins.centralizar 
+            padding-top: 1rem 
+            flex-direction: column
+            color: #000000
+            width: 70%
+            font-weight: 400
+            @include mixins.tablet
+                display: flex
+            @include mixins.smartphone
+                display: block
+
+            &-seguimento
+                list-style: none  
+                width: 100%
+
+                p
+                    @include mixins.centralizar
+                    font-size: 16px
+
+                &-link
+                    text-decoration: none
+                    color: #000 
+
+                    &-lista
+                        margin: 0 auto 
+                        width: 17rem
+                        // display: none
+                        padding: 1rem 1rem 1rem 
+
+                        &-produto
+                            @include mixins.centralizar
+                            justify-content: left
+                            list-style: none
+
+
+                            &-link
+                                text-decoration: none
+                                color: #585858  
+                                &:hover
+                                    font-weight: 700
+                                    color: #ffc000
+                                    
+        
+.aside
+    @include mixins.centralizar
+    justify-content: flex-start 
+    align-items: flex-start
+    flex-direction: column
+    font-family: 'Roboto', sans-serif
+    font-weight: 400
+
+    @include mixins.tablet
+        display: none
+            
+    &-guia
+        display: flex
+        column-gap: 10px
+        color: #585858
+
+        a
+            text-decoration: none
+
+        &-desabilitado
+            color: #585858
+
+        &-habilitado
+            color: #3b3b3b
+
+    &-categoria
+        border-right: 2px solid #747577
+        height: 100%
+
+        p
+            width: 16rem
+            height: 2rem
+            background-color: #ffc000
+            color: #000
+            @include mixins.centralizar
+            font-size: 1rem
+            text-transform: uppercase
+            margin: 1.5rem 0
+
+        &-lista
+            margin: 0 auto
+            line-height: 2rem
+            padding: 0 .5rem
+
+            &-seguimento
+                list-style: none
+                display: grid
+                grid-template-columns: 0.5rem 1fr
+                align-items: center
+                column-gap: 0.5rem
+
+                &-link
+                    align-items: center
+                    text-decoration: none
+                    color: #000
+                    width: 15rem
+
+                    &-lista
+                        display: none
+                        padding: 0 25px
+                        width: 16.5rem
+                        list-style: none
+                        font-size: 15px
+                        transition-property: display
+
+                        .produtos-link
+                            text-decoration: none
+                            color: #555555
+
+
+                .triangulo
+                    width: 0
+                    height: 0      
+                    border-top: .35rem solid transparent
+                    border-bottom: .35rem solid transparent
+                    border-left: .5rem solid #000000
+
+                .triangulo.active
+                    border-left: .35rem solid transparent
+                    border-right: .35rem solid transparent
+                    border-top: .5rem solid #000000       
+
+                #tri1.active ~ .lista1, #tri2.active ~ .lista2, #tri3.active ~ .lista3, #tri4.active ~ .lista4
+                    display: block

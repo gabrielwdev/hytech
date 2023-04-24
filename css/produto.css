@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E2E1DD;
+}
+body .container-conteudo {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 16rem auto;
+  padding: 2%;
+}
+@media (max-width: 1000px) {
+  body .container-conteudo {
+    display: flex;
+    flex-direction: column;
+  }
+}
+body .container-conteudo .main {
+  padding: 2.5rem 2rem;
+  font-family: "Roboto", sans-serif;
+}
+body .container-conteudo .main-section {
+  min-height: 100vh;
+  border-bottom: 2px solid #464647;
+}
+@media (max-width: 600px) {
+  body .container-conteudo .main-section {
+    border: none;
+  }
+}
+body .container-conteudo .main-section-titulo {
+  border-bottom: 2px solid #464647;
+  padding: 0 0 1rem 2rem;
+  font-weight: 400;
+  font-size: 23px;
+  color: #464647;
+}
+@media (max-width: 600px) {
+  body .container-conteudo .main-section-titulo {
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+}
+body .container-conteudo .main-section article {
+  display: grid;
+  grid-template-columns: 22rem auto;
+  margin: 2rem 0;
+}
+@media (max-width: 600px) {
+  body .container-conteudo .main-section article {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1000px) {
+  body .container-conteudo .main-section article {
+    grid-template-columns: 19rem auto;
+  }
+}
+body .container-conteudo .main-section article .produto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+@media (max-width: 600px) {
+  body .container-conteudo .main-section article .produto {
+    margin: 2rem auto;
+  }
+}
+body .container-conteudo .main-section article .produto-img {
+  border-bottom: 2px solid #797979;
+  padding-bottom: 1rem;
+  width: 14rem;
+  height: 14rem;
+}
+@media (max-width: 600px) {
+  body .container-conteudo .main-section article .produto-img {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+body .container-conteudo .main-section article .descricao-completa {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+@media (max-width: 600px) {
+  body .container-conteudo .main-section article .descricao-completa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body .container-conteudo .main-section article .descricao-completa h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+body .container-conteudo .main-section article .descricao-completa p {
+  font-size: 15px;
+}
+body .container-conteudo .main-section article .descricao-completa .btn-contato {
+  display: flex;
+  justify-content: right;
+  width: 60%;
+  height: 3.5rem;
+  background-color: #ffc000;
+  border: none;
+  margin-left: 37%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  body .container-conteudo .main-section article .descricao-completa .btn-contato {
+    margin: 0 auto;
+  }
+}
+body .container-conteudo .main-section article .descricao-completa .btn-contato .cotacao {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/*# sourceMappingURL=automacao-industrial-atuadores-frl.css.map */

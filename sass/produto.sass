@@ -1,0 +1,109 @@
+@use 'mixins'
+@use 'variables'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background-color: #E2E1DD   
+
+
+    .container-conteudo
+        display: grid
+        justify-content: center
+        grid-template-columns: 16rem auto
+        padding: 2%
+        @include mixins.tablet
+            display: flex
+            flex-direction: column
+
+        .main
+            padding: 2.5rem 2rem
+            font-family: 'Roboto',sans-serif
+
+            &-section
+                min-height: 100vh
+                border-bottom: 2px solid #464647
+                @include mixins.smartphone
+                    border: none
+
+                &-titulo
+                    border-bottom: 2px solid #464647
+                    padding: 0 0 1rem 2rem
+                    font-weight: 400
+                    font-size: 23px
+                    color: #464647
+
+                    @include mixins.smartphone
+                        padding: .5rem 0
+                        text-align: center
+
+                article
+                    display: grid
+                    grid-template-columns: 22rem auto
+                    margin: 2rem 0
+
+                    @include mixins.smartphone
+                        display: flex
+                        flex-wrap: wrap
+                    
+                    @include mixins.tablet
+                        grid-template-columns: 19rem auto
+                    
+                    .produto
+                        @include mixins.centralizar
+                        align-items: flex-start
+                        
+                        @include mixins.smartphone
+                            margin: 2rem auto
+                        
+                        &-img
+                            border-bottom: 2px solid #797979
+                            padding-bottom: 1rem
+                            width: 14rem
+                            height: 14rem
+
+                            @include mixins.smartphone
+                                width: 18rem
+                                height: 18rem
+
+                    .descricao-completa 
+                        display: flex
+                        flex-wrap: wrap
+                        row-gap: 2rem
+                        @include mixins.notebook
+
+                        @include mixins.smartphone
+                            @include mixins.centralizar
+
+                        h2
+                            font-size: 30px
+                            font-weight: 400
+
+                        p
+                            font-size: 15px
+
+                        .btn-contato                            
+                            display: flex
+                            justify-content: right
+                            width: 60%
+                            height: 3.5rem
+                            background-color: #ffc000
+                            border: none
+                            margin-left: 37%
+                            @include mixins.centralizar
+
+                            @include mixins.smartphone
+                                margin: 0 auto
+
+                            .cotacao
+                                font-size: 20px
+                                text-decoration: none
+                                color: #fff
+
+
+                            
+
+                        

@@ -13,6 +13,7 @@
     />
     <!-- Folhas de estilo -->
     <link rel="stylesheet" href="css/produtos.css" />
+    <link rel="stylesheet" href="css/aside-produtos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- Animações css-->
     <link
@@ -62,7 +63,274 @@
       </header>
       <div class="container-conteudo">
         <section class="filtros-drop">
-          <h2 class="filtros-drop-titulo">Produtos</h2>
+          <button id="btnFiltro" class="filtros-drop-btn">Filtros</button>
+          <div class="drop-categoria">
+            <h3>Produtos categorias</h3>
+            <ul class="drop-categoria-lista">
+              <li class="drop-categoria-lista-seguimento">
+                <p>Automação Industrial</p>
+                <a class="drop-categoria-lista-seguimento-link" href="">
+                  <ul
+                    class="drop-categoria-lista-seguimento-link-lista"
+                    id="lista5"
+                  >
+                    <li
+                      class="drop-categoria-lista-seguimento-link-lista-produto"
+                    >
+                      <a
+                        class="drop-categoria-lista-seguimento-link-lista-produto-link"
+                        href="automacao-industrial-valvulas-solenoide.html"
+                        >Valvulas solenóide</a
+                      >
+                    </li>
+                    <li
+                      class="drop-categoria-lista-seguimento-link-lista-produto"
+                    >
+                      <a
+                        class="drop-categoria-lista-seguimento-link-lista-produto-link"
+                        href="automacao-industrial-cilindros-pneumaticos.html"
+                        >Cilindros pneumáticos</a
+                      >
+                    </li>
+                    <li
+                      class="drop-categoria-lista-seguimento-link-lista-produto"
+                    >
+                      <a
+                        class="drop-categoria-lista-seguimento-link-lista-produto-link"
+                        href="automacao-industrial-conexoes-tubo.html"
+                        >Conexões tubo</a
+                      >
+                    </li>
+                    <li
+                      class="drop-categoria-lista-seguimento-link-lista-produto"
+                    >
+                      <a
+                        class="drop-categoria-lista-seguimento-link-lista-produto-link"
+                        href="automacao-industrial-conjuntos-lubrefil.html"
+                        >Conjunto lubrefil</a
+                      >
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li class="drop-categoria-lista-seguimento">
+                <p>Mangueiras e Conexões</p>
+                <a class="drop-categoria-lista-seguimento-link" href="">
+                  <ul class="drop-categoria-lista-seguimento-link-lista">
+                    <li
+                      class="drop-categoria-lista-seguimento-link-lista-produto"
+                    >
+                      <a
+                        class="drop-categoria-lista-seguimento-link-lista-produto-link"
+                        href="conexoes-mangueiras-conexoes-baixa-e-alta-pressao.html"
+                        >Mangueiras baixa e alta pressão</a
+                      >
+                    </li>
+                    <li
+                      class="drop-categoria-lista-seguimento-link-lista-produto"
+                    >
+                      <a
+                        class="drop-categoria-lista-seguimento-link-lista-produto-link"
+                        href="conexoes-mangueiras-mangueiras-montadas.html"
+                        >Mangueiras montadas</a
+                      >
+                    </li>
+                    <li
+                      class="drop-categoria-lista-seguimento-link-lista-produto"
+                    >
+                      <a
+                        class="drop-categoria-lista-seguimento-link-lista-produto-link"
+                        href="conexoes-mangueiras-conexoes-baixa-e-alta-pressao.html"
+                        >Conexões baixa e alta pressão</a
+                      >
+                    </li>
+                    <li
+                      class="drop-categoria-lista-seguimento-link-lista-produto"
+                    >
+                      <a
+                        class="drop-categoria-lista-seguimento-link-lista-produto-link"
+                        href="conexoes-mangueiras-adaptadores.html"
+                        >Adaptadores</a
+                      >
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li class="drop-categoria-lista-seguimento">
+                <p>Hidráulica Industrial</p>
+                <a class="drop-categoria-lista-seguimento-link" href="">
+                  <ul class="drop-categoria-lista-seguimento-link-lista">
+                    <li
+                      class="drop-categoria-lista-seguimento-link-lista-produto"
+                    >
+                      <a
+                        class="drop-categoria-lista-seguimento-link-lista-produto-link"
+                        href="hidraulicas-valvulas-direcionais.html"
+                        >Válvulas direcionais</a
+                      >
+                    </li>
+                    <li
+                      class="drop-categoria-lista-seguimento-link-lista-produto"
+                    >
+                      <a
+                        class="drop-categoria-lista-seguimento-link-lista-produto-link"
+                        href="hidraulicas-bombas-e-motores.html"
+                        >Bombas e motores</a
+                      >
+                    </li>
+                    <li
+                      class="drop-categoria-lista-seguimento-link-lista-produto"
+                    >
+                      <a
+                        class="drop-categoria-lista-seguimento-link-lista-produto-link"
+                        href="hidraulicas-unidade-hidraulica.html"
+                        >Unidade hidráulica</a
+                      >
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li class="drop-categoria-lista-seguimento">
+                <p>Filtragem Industrial</p>
+                <a class="drop-categoria-lista-seguimento-link" href="">
+                  <ul class="drop-categoria-lista-seguimento-link-lista">
+                    <li
+                      class="drop-categoria-lista-seguimento-link-lista-produto"
+                    >
+                      <a
+                        class="drop-categoria-lista-seguimento-link-lista-produto-link"
+                        href="filtragem-filtros-hidraulicos.html"
+                        >Filtros hidráulicos</a
+                      >
+                    </li>
+                    <li
+                      class="drop-categoria-lista-seguimento-link-lista-produto"
+                    >
+                      <a
+                        class="drop-categoria-lista-seguimento-link-lista-produto-link"
+                        href="filtragem-filtros-para-ar-comprimido.html"
+                        >Filtros para ar comprimido
+                      </a>
+                    </li>
+                    <li
+                      class="drop-categoria-lista-seguimento-link-lista-produto"
+                    >
+                      <a
+                        class="drop-categoria-lista-seguimento-link-lista-produto-link"
+                        href="filtragem-filtros-separadores-condensado.html"
+                        >Separadores de condensados</a
+                      >
+                    </li>
+                  </ul>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <aside class="aside">
+          <div class="aside-guia">
+            <a class="aside-guia-desabilitado" href="index.html">Home</a>
+            <p>/</p>
+            <a class="aside-guia-habilitado" href="produtos.html">Produtos</a>
+          </div>
+          <div class="aside-categoria">
+            <p>Produtos categorias</p>
+            <ul class="aside-categoria-lista">
+              <li class="aside-categoria-lista-seguimento">
+                <div class="triangulo" id="tri1"></div>
+                <a class="aside-categoria-lista-seguimento-link" href="">
+                  Automação Industrial
+                  <ul
+                    class="aside-categoria-lista-seguimento-link-lista lista1"
+                  >
+                    <li>
+                      <a class="produtos-link" href="automacao-industrial-valvulas-solenoide.html">Válvulas solenoide</a>
+                    </li>
+                    <li>
+                      <a class="produtos-link" href="automacao-industrial-cilindros-pneumaticos.html">Cilindros-pneumáticos</a>
+                    </li>
+                    <li>
+                      <a class="produtos-link" href="automacao-industrial-conexoes-tubo.html">Conexões tubo</a>
+                    </li>
+
+                    <li>
+                      <a class="produtos-link" href="automacao-industrial-conjuntos-lubrefil.html">Conjunto lubrefil</a>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li class="aside-categoria-lista-seguimento">
+                <div class="triangulo" id="tri2"></div>
+                <a class="aside-categoria-lista-seguimento-link" href="">
+                  Mangueiras e Conexões
+                  <ul
+                    class="aside-categoria-lista-seguimento-link-lista lista2"
+                  >
+                    <li>
+                      <a class="produtos-link" href="conexoes-mangueiras-mangueiras-baixa-e-alta-pressao.html"
+                        >Mangueiras baixa e alta pressão</a
+                      >
+                    </li>
+                    <li>
+                      <a class="produtos-link" href="conexoes-mangueiras-mangueiras-montadas.html">Mangueiras montadas</a>
+                    </li>
+                    <li>
+                      <a class="produtos-link" href="conexoes-mangueiras-conexoes-baixa-e-alta-pressao.html
+                        >Conexões baixa e alta pressão</a
+                      >
+                    </li>
+                    <li>
+                      <a class="produtos-link" href="conexoes-mangueiras-adaptadores.html">Adaptadores</a>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li class="aside-categoria-lista-seguimento">
+                <div class="triangulo" id="tri3"></div>
+                <a class="aside-categoria-lista-seguimento-link" href="">
+                  Hidráulica Industrial
+                  <ul
+                    class="aside-categoria-lista-seguimento-link-lista lista3"
+                  >
+                    <li>
+                      <a class="produtos-link" href="hidraulicas-valvulas-direcionais.html">Válvula direcional</a>
+                    </li>
+                    <li>
+                      <a class="produtos-link" href="hidraulicas-bombas-e-motores.html">Bombas e motores</a>
+                    </li>
+                    <li>
+                      <a class="produtos-link" href="hidraulicas-unidade-hidraulica.html">Unidade hidráulica</a>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li class="aside-categoria-lista-seguimento">
+                <div class="triangulo" id="tri4"></div>
+                <a class="aside-categoria-lista-seguimento-link" href="">
+                  Filtragem Industrial
+                  <ul
+                    class="aside-categoria-lista-seguimento-link-lista lista4"
+                  >
+                    <li>
+                      <a class="produtos-link" href="filtragem-filtros-hidraulicos.html">Filtros hidráulicos</a>
+                    </li>
+                    <li>
+                      <a class="produtos-link" href="filtragem-filtros-para-ar-comprimido.html"
+                        >Filtros para ar comprimido
+                      </a>
+                    </li>
+                    <li>
+                      <a class="produtos-link" href="filtragem-filtros-separadores-condensado.html"
+                        >Separadores de condensados</a
+                      >
+                    </li>
+                  </ul>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <!-- <section class="filtros-drop">
           <button id="btnFiltro" class="filtros-drop-btn">Filtros</button>
           <div class="drop-categoria">
             <h3>Produtos categorias</h3>
@@ -219,7 +487,7 @@
             <p>Produtos categorias</p>
             <ul class="aside-categoria-lista">
               <li class="aside-categoria-lista-seguimento">
-                <div class="triangulo1" id="tri1"></div>
+                <div class="triangulo" id="tri1"></div>
                 <a class="aside-categoria-lista-seguimento-link" href="">
                   Automação Industrial
                   <ul
@@ -242,7 +510,7 @@
                 </a>
               </li>
               <li class="aside-categoria-lista-seguimento">
-                <div class="triangulo2" id="tri2"></div>
+                <div class="triangulo" id="tri2"></div>
                 <a class="aside-categoria-lista-seguimento-link" href="">
                   Mangueiras e Conexões
                   <ul
@@ -265,7 +533,7 @@
                 </a>
               </li>
               <li class="aside-categoria-lista-seguimento">
-                <div class="triangulo3" id="tri3"></div>
+                <div class="triangulo" id="tri3"></div>
                 <a class="aside-categoria-lista-seguimento-link" href="">
                   Hidráulica Industrial
                   <ul
@@ -286,7 +554,7 @@
                 </a>
               </li>
               <li class="aside-categoria-lista-seguimento">
-                <div class="triangulo4" id="tri4"></div>
+                <div class="triangulo" id="tri4"></div>
                 <a class="aside-categoria-lista-seguimento-link" href="">
                   Filtragem Industrial
                   <ul
@@ -310,7 +578,7 @@
               </li>
             </ul>
           </div>
-        </aside>
+        </aside> -->
         <main class="main">
           <article class="main-introducao">
             <h1>Produtos</h1>
@@ -338,14 +606,14 @@
                       class="main-produtos-lista-categoria-lista-produto-link"
                     >
                       <img
-                        src="img/automacao_01.png"
+                        src="img/automacao-valvulas-solenoide.png"
                         alt=""
                         class="main-produtos-lista-categoria-lista-produto-link-img"
                       />
                       <h3
                         class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
                       >
-                        Atuadores FRL
+                        Valvulas solenoide
                       </h3>
                     </a>
                   </li>
@@ -355,14 +623,14 @@
                       class="main-produtos-lista-categoria-lista-produto-link"
                     >
                       <img
-                        src="img/automacao_02.png"
+                        src="img/automacao-cilindros-pneumaticos.png"
                         alt=""
                         class="main-produtos-lista-categoria-lista-produto-link-img"
                       />
                       <h3
                         class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
                       >
-                        Válvulas solenoide
+                        Cilindros pneumáticos
                       </h3>
                     </a>
                   </li>
@@ -372,7 +640,24 @@
                       class="main-produtos-lista-categoria-lista-produto-link"
                     >
                       <img
-                        src="img/automacao_03.png"
+                        src="img/automacao-conexoes-tubo.jpg"
+                        alt=""
+                        class="main-produtos-lista-categoria-lista-produto-link-img"
+                      />
+                      <h3
+                        class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
+                      >
+                        Conexões tubo
+                      </h3>
+                    </a>
+                  </li>
+                  <li class="main-produtos-lista-categoria-lista-produto">
+                    <a
+                      href=""
+                      class="main-produtos-lista-categoria-lista-produto-link"
+                    >
+                      <img
+                        src="img/automacao-conjunto-lubrefil.jpg"
                         alt=""
                         class="main-produtos-lista-categoria-lista-produto-link-img"
                       />
@@ -396,14 +681,14 @@
                       class="main-produtos-lista-categoria-lista-produto-link"
                     >
                       <img
-                        src="img/conexoes-mangueiras_01.png"
+                        src="img/mangueiras-e-conexoes-mangueira-hidraulica.png"
                         alt=""
                         class="main-produtos-lista-categoria-lista-produto-link-img"
                       />
                       <h3
                         class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
                       >
-                        Mangueiras de alta pressão
+                        Mangueiras de baixa e alta pressão
                       </h3>
                     </a>
                   </li>
@@ -413,14 +698,14 @@
                       class="main-produtos-lista-categoria-lista-produto-link"
                     >
                       <img
-                        src="img/conexoes-mangueiras_02.png"
+                        src="img/mangueiras-e-conexoes-mangueiras-montadas.png"
                         alt=""
                         class="main-produtos-lista-categoria-lista-produto-link-img"
                       />
                       <h3
                         class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
                       >
-                        Mangueiras de baixa pressão
+                        Mangueiras montada
                       </h3>
                     </a>
                   </li>
@@ -430,14 +715,14 @@
                       class="main-produtos-lista-categoria-lista-produto-link"
                     >
                       <img
-                        src="img/conexoes-mangueiras_03.png"
+                        src="img/mangueiras-e-conexoes-conexoes-alta-pressao.jpg"
                         alt=""
                         class="main-produtos-lista-categoria-lista-produto-link-img"
                       />
                       <h3
                         class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
                       >
-                        Engates rápidos
+                        Conexões baixa e alta pressão
                       </h3>
                     </a>
                   </li>
@@ -454,24 +739,7 @@
                       class="main-produtos-lista-categoria-lista-produto-link"
                     >
                       <img
-                        src="img/hidraulica_01.png"
-                        alt=""
-                        class="main-produtos-lista-categoria-lista-produto-link-img"
-                      />
-                      <h3
-                        class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
-                      >
-                        Unidade hidráulica
-                      </h3>
-                    </a>
-                  </li>
-                  <li class="main-produtos-lista-categoria-lista-produto">
-                    <a
-                      href=""
-                      class="main-produtos-lista-categoria-lista-produto-link"
-                    >
-                      <img
-                        src="img/hidraulica_02.png"
+                        src="img/hidraulica-valvulas-direcional.png"
                         alt=""
                         class="main-produtos-lista-categoria-lista-produto-link-img"
                       />
@@ -488,14 +756,31 @@
                       class="main-produtos-lista-categoria-lista-produto-link"
                     >
                       <img
-                        src="img/hidraulica_03.png"
+                        src="img/hidraulica-bombas-e-motores.jpg"
                         alt=""
                         class="main-produtos-lista-categoria-lista-produto-link-img"
                       />
                       <h3
                         class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
                       >
-                        Váçvula controladora de fluxo
+                        Bombas e motores
+                      </h3>
+                    </a>
+                  </li>
+                  <li class="main-produtos-lista-categoria-lista-produto">
+                    <a
+                      href=""
+                      class="main-produtos-lista-categoria-lista-produto-link"
+                    >
+                      <img
+                        src="img/hidraulica-unidade-hidraulica.png"
+                        alt=""
+                        class="main-produtos-lista-categoria-lista-produto-link-img"
+                      />
+                      <h3
+                        class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
+                      >
+                        Unidade hidráulica
                       </h3>
                     </a>
                   </li>
@@ -512,7 +797,7 @@
                       class="main-produtos-lista-categoria-lista-produto-link"
                     >
                       <img
-                        src="img/filtragem_01.png"
+                        src="img/filtragem-filtros-hidraulicos.png"
                         alt=""
                         class="main-produtos-lista-categoria-lista-produto-link-img"
                       />
@@ -529,14 +814,14 @@
                       class="main-produtos-lista-categoria-lista-produto-link"
                     >
                       <img
-                        src="img/filtragem_02.png"
+                        src="img/filtragem-filtro-para-ar-comprimido.jpg"
                         alt=""
                         class="main-produtos-lista-categoria-lista-produto-link-img"
-                      />
-                      <h3
+                        />
+                        <h3
                         class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
-                      >
-                        Separadores de condensados
+                        >
+                        Filtros para ar comprimido
                       </h3>
                     </a>
                   </li>
@@ -546,14 +831,14 @@
                       class="main-produtos-lista-categoria-lista-produto-link"
                     >
                       <img
-                        src="img/filtragem_03.png"
+                        src="img/filtragen-separador-de-condensado.webp"
                         alt=""
                         class="main-produtos-lista-categoria-lista-produto-link-img"
                       />
                       <h3
                         class="main-produtos-lista-categoria-lista-produto-link-subtitulo"
                       >
-                        Filtros para ar comprimido
+                        Separadores de condensados
                       </h3>
                     </a>
                   </li>
