@@ -10,7 +10,7 @@ body {
 body .container-conteudo {
   display: grid;
   justify-content: center;
-  grid-template-columns: 16rem auto;
+  grid-template-columns: 18rem auto;
   padding: 2%;
 }
 @media (max-width: 1000px) {
@@ -126,4 +126,4 @@ body .container-conteudo .main-section article .descricao-completa .btn-contato 
   color: #fff;
 }
 
-/*# sourceMappingURL=automacao-industrial-atuadores-frl.css.map */
+/*# sourceMappingURL=produto.css.map */
