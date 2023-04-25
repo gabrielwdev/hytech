@@ -7,8 +7,8 @@
 body .container-conteudo {
   display: grid;
   justify-content: center;
-  grid-template-columns: 20rem auto;
-  padding: 3%;
+  grid-template-columns: 18rem auto;
+  padding: 2%;
 }
 @media (max-width: 1100px) {
   body .container-conteudo {
