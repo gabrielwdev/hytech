@@ -82,8 +82,12 @@ body
                         
                         &-lista
                             @include mixins.centralizar
+                            justify-content: left
                             flex-wrap: wrap
                             gap: 2rem
+
+                            @include mixins.tablet 
+                                justify-content: center
 
                             &-produto
                                 list-style: none

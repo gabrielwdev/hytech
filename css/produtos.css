@@ -86,8 +86,14 @@ body .container-conteudo .main-produtos-lista-categoria-lista {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: left;
   flex-wrap: wrap;
   gap: 2rem;
+}
+@media (max-width: 1000px) {
+  body .container-conteudo .main-produtos-lista-categoria-lista {
+    justify-content: center;
+  }
 }
 body .container-conteudo .main-produtos-lista-categoria-lista-produto {
   list-style: none;
